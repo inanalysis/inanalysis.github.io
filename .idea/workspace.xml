@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64436c79-441f-4ee9-b059-773e7c70bb98" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/post_abnormal.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/demo_KDD.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/demo_index.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/demo_task_choose.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/demo_task_map.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/post.html" afterPath="$PROJECT_DIR$/post.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/demo/abnormal/Selection_273.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/demo/abnormal/Selection_274.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/demo/abnormal/Selection_275.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/demo/abnormal/Selection_277.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/post_abnormal.html" afterPath="$PROJECT_DIR$/post_abnormal.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,8 +34,8 @@
       <file leaf-file-name="post_abnormal.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/post_abnormal.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="88" column="74" lean-forward="false" selection-start-line="88" selection-start-column="74" selection-end-line="88" selection-end-column="74" />
+            <state relative-caret-position="558">
+              <caret line="97" column="118" lean-forward="false" selection-start-line="97" selection-start-column="118" selection-end-line="97" selection-end-column="118" />
               <folding />
             </state>
           </provider>
@@ -62,8 +59,8 @@
         <option value="$PROJECT_DIR$/contact.html" />
         <option value="$PROJECT_DIR$/about.html" />
         <option value="$PROJECT_DIR$/post.html" />
-        <option value="$PROJECT_DIR$/post_abnormal.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/post_abnormal.html" />
       </list>
     </option>
   </component>
@@ -428,8 +425,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/post_abnormal.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="88" column="74" lean-forward="false" selection-start-line="88" selection-start-column="74" selection-end-line="88" selection-end-column="74" />
+        <state relative-caret-position="558">
+          <caret line="97" column="118" lean-forward="false" selection-start-line="97" selection-start-column="118" selection-end-line="97" selection-end-column="118" />
           <folding />
         </state>
       </provider>
