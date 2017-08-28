@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
   <head>
 
@@ -65,7 +65,7 @@
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="post-heading">
               <h1>Abnormal Detection</h1>
-              <h2 class="subheading">異常檢測（Abnormal detection）對不符合預期模式或資料集中其他專案的專案、事件或觀測值的識別。</h2>
+              <h2 class="subheading">異常檢測（Abnormal detection）通過尋找與其他資料最不符合的例項來檢測出未標記測試資料的異常。</h2>
               <span class="meta">Posted by
                 <a href="#">InAnalysis</a>
                 on August 23, 2017</span>
@@ -81,8 +81,30 @@
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
               <p>
-                 有三大類異常檢測演算法。[1] 在假設資料集中大多數例項都是正常的前提下，無監督異常檢測方法能通過尋找與其他資料最不符合的例項來檢測出未標記測試資料的異常。監督式異常檢測方法需要一個已經被標記「正常」與「異常」的資料集，並涉及到訓練分類器（與許多其他的統計分類問題的關鍵區別是異常檢測的內在不均衡性）。半監督式異常檢測方法根據一個給定的正常訓練資料集建立一個表示正常行為的模型，然後檢測由學習模型生成的測試例項的可能性。
+                有三大類異常檢測演算法。
+                在假設資料集中大多數例項都是正常的前提下，無監督異常檢測方法能通過尋找與其他資料最不符合的例項來檢測出未標記測試資料的異常。
+                監督式異常檢測方法需要一個已經被標記「正常」與「異常」的資料集，並涉及到訓練分類器
+                （與許多其他的統計分類問題的關鍵區別是異常檢測的內在不均衡性）。
+                半監督式異常檢測方法根據一個給定的正常訓練資料集建立一個表示正常行為的模型，然後檢測由學習模型生成的測試例項的可能性。
               </p>
+            <p>
+              範例問題為：藉由紅酒資料（<a href="https://archive.ics.uci.edu/ml/datasets/wine+quality">UCI Data Set</a>）
+              ，判斷品質是否異常。<br>
+              紅酒資料欄位說明：<br>
+              1 - fixed acidity <br>
+2 - volatile acidity <br>
+3 - citric acid <br>
+4 - residual sugar <br>
+5 - chlorides <br>
+6 - free sulfur dioxide <br>
+7 - total sulfur dioxide <br>
+8 - density <br>
+9 - pH <br>
+10 - sulphates <br>
+11 - alcohol <br>
+              訓練資料為：正常品質的紅酒資料（quality介於4到7之間）<br>
+              測試資料為：將quality介於4到7之間的紅酒資料標示為 1 （正常），其他則標示為 -1（異常）
+            </p>
               <h2 class="section-heading">模型訓練流程</h2>
               <p>上傳訓練資料</p>
               <img class="img-fluid" src="img/demo/abnormal/data_input.png" alt="">
