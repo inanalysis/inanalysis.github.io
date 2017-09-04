@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64436c79-441f-4ee9-b059-773e7c70bb98" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/post_AbnormalDetection.html" afterPath="$PROJECT_DIR$/post_AbnormalDetection.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/post_Classification.html" afterPath="$PROJECT_DIR$/post_Classification.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/post_Clustering.html" afterPath="$PROJECT_DIR$/post_Clustering.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/post_QuickStart.html" afterPath="$PROJECT_DIR$/post_QuickStart.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/post_Regression.html" afterPath="$PROJECT_DIR$/post_Regression.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,11 +21,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="post_AbnormalDetection.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="post_QuickStart.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/post_QuickStart.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="123" column="14" lean-forward="false" selection-start-line="123" selection-start-column="14" selection-end-line="123" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post_Clustering.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/post_Clustering.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-648">
+              <caret line="66" column="28" lean-forward="false" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post_AbnormalDetection.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/post_AbnormalDetection.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="118" column="14" lean-forward="false" selection-start-line="118" selection-start-column="14" selection-end-line="118" selection-end-column="14" />
+            <state relative-caret-position="324">
+              <caret line="121" column="76" lean-forward="true" selection-start-line="113" selection-start-column="16" selection-end-line="121" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -54,13 +77,13 @@
         <option value="$PROJECT_DIR$/contact.html" />
         <option value="$PROJECT_DIR$/post.html" />
         <option value="$PROJECT_DIR$/post_abnormal.html" />
-        <option value="$PROJECT_DIR$/post_Classification.html" />
-        <option value="$PROJECT_DIR$/post_Clustering.html" />
-        <option value="$PROJECT_DIR$/post_QuickStart.html" />
-        <option value="$PROJECT_DIR$/post_Regression.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/about.html" />
+        <option value="$PROJECT_DIR$/post_Regression.html" />
+        <option value="$PROJECT_DIR$/post_Classification.html" />
+        <option value="$PROJECT_DIR$/post_Clustering.html" />
         <option value="$PROJECT_DIR$/post_AbnormalDetection.html" />
+        <option value="$PROJECT_DIR$/post_QuickStart.html" />
       </list>
     </option>
   </component>
@@ -283,7 +306,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1295" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17915058" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -513,34 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/post_Classification.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="142" column="70" lean-forward="false" selection-start-line="142" selection-start-column="70" selection-end-line="142" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/post_Clustering.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="142" column="70" lean-forward="false" selection-start-line="142" selection-start-column="70" selection-end-line="142" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/post_QuickStart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="186" column="70" lean-forward="false" selection-start-line="186" selection-start-column="70" selection-end-line="186" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/post_Regression.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="158" column="97" lean-forward="true" selection-start-line="158" selection-start-column="44" selection-end-line="158" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -557,10 +552,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/post_Regression.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="68" column="42" lean-forward="true" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/post_Classification.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="67" column="39" lean-forward="false" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/post_AbnormalDetection.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="118" column="14" lean-forward="false" selection-start-line="118" selection-start-column="14" selection-end-line="118" selection-end-column="14" />
+        <state relative-caret-position="324">
+          <caret line="121" column="76" lean-forward="true" selection-start-line="113" selection-start-column="16" selection-end-line="121" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/post_QuickStart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="123" column="14" lean-forward="false" selection-start-line="123" selection-start-column="14" selection-end-line="123" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/post_Clustering.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-648">
+          <caret line="66" column="28" lean-forward="false" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
           <folding />
         </state>
       </provider>
