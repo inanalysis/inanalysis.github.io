@@ -85,41 +85,26 @@
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <p>
-                    Classification ：已知群集（分類），找到分界線。
-                    
+                    分類是根據已知樣本的某些特徵，判斷一個新的樣本屬於哪種已知的樣本類。分類問題也被稱為監督式學習
+                    (supervised classification)，根據已知訓練區提供的樣本，通過計算選擇特徵參數，建立判別函數以對樣本進行的分類。
                 </p>
                 <p>
-                    範例問題為：藉由紅酒資料（<a href="https://archive.ics.uci.edu/ml/datasets/wine+quality">UCI Data Set</a>）
-                    ，判斷品質是否異常。<br>
-                    紅酒資料欄位說明：<br>
-                    1 - fixed acidity <br>
-                    2 - volatile acidity <br>
-                    3 - citric acid <br>
-                    4 - residual sugar <br>
-                    5 - chlorides <br>
-                    6 - free sulfur dioxide <br>
-                    7 - total sulfur dioxide <br>
-                    8 - density <br>
-                    9 - pH <br>
-                    10 - sulphates <br>
-                    11 - alcohol <br>
-                    訓練資料為：正常品質的紅酒資料（quality介於4到7之間）<br>
-                    測試資料為：將quality介於4到7之間的紅酒資料標示為 1 （正常），其他則標示為 -1（異常）
+                    範例問題為：藉由Iris資料（<a href="https://archive.ics.uci.edu/ml/datasets/iris">UCI Data Set</a>）
+                    的sepal(萼片)長寬和petal(花瓣)長寬來分類iris的種類。<br>
+                    Iris資料欄位說明：<br>
+                    1. sepal length in cm <br>
+                    2. sepal width in cm <br>
+                    3. petal length in cm <br>
+                    4. petal width in cm <br>
+                    5. class: <br>
+                    -- Iris Setosa <br>
+                    -- Iris Versicolour <br>
+                    -- Iris Virginica <br>
+                    訓練資料為：iris.data中各iris類別分別取80%的資料<br>
+                    測試資料為：各iris類別剩下20%資料
                 </p>
                 <h2 class="section-heading">模型訓練流程</h2>
-                <p>上傳訓練資料</p>
-                <img class="img-fluid" src="img/demo/abnormal/data_input.png" alt="">
-                <span class="caption text-muted">Data Upload</span>
-                <img class="img-fluid" src="img/demo/abnormal/data_input2.png" alt="">
-                <span class="caption text-muted">Data Upload</span>
-                <p>從Function欄位中, 選擇Data Pre-processing按鈕, 可進行資料預處理(Pre-process)</p>
-                <img class="img-fluid" src="img/demo/abnormal/data_step1.png" alt="">
-                <span class="caption text-muted">Step1: Data Pre-view</span>
-                <img class="img-fluid" src="img/demo/abnormal/data_step2.png" alt="">
-                <span class="caption text-muted">Step2: Filter Out Noise Data</span>
-                <img class="img-fluid" src="img/demo/abnormal/data_step3.png" alt="">
-                <span class="caption text-muted">Step3: Select Feature to Normailze (Optional) & Save Pre-processed Data</span>
-            </div>
+                </div>
         </div>
     </div>
 </article>
