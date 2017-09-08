@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
 
@@ -63,113 +63,51 @@
 </nav>
 
 <!-- Page Header -->
-<header class="masthead" style="background-image: url('img/home-bg.jpg')">
+<header class="masthead" style="background-image: url('img/post-bg.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
-                <div class="site-heading">
-                    <h1>InAnalysis</h1>
-                    <span class="subheading">快速訓練模型、測試資料和輕鬆建置API的機器學習服務平台</span>
+                <div class="post-heading">
+                    <h1>Classification</h1>
+                    <h2 class="subheading">分類（Classification）藉由給定類別的資料訓練出一個模型，當輸入新的資料X，能夠由訓練好的模型獲得一個Y，代表X屬於何種類別。</h2>
+                    <span class="meta">Posted by
+                <a href="#">InAnalysis</a>
+                on August 23, 2017</span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-            <h2 class="section-heading">
-                Welcome to InAnalysis!
-            </h2>
-            <p>
-                InAnalysis機器學習平台能將資料變成可行動的商業智慧。開發者無需具備任何機器學習經驗，就能輕鬆使用。
-            </p>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 mx-auto">
-                    <img class="img-fluid" src="img/icon/icon_flow.jpg" alt="">
-                    <p align="center">
-                        流暢KDD流程，掌握模型訓練與資料狀況
-                    </p>
-                </div>
-                <div class="col-lg-4 col-md-4 mx-auto">
-                    <img class="img-fluid" src="img/icon/icon_api.png" alt="">
-                    <p align="center">
-                        快速建置API，輕鬆將模型佈署至任何應用
-                    </p>
-                </div>
-                <div class="col-lg-4 col-md-4 mx-auto">
-                    <img class="img-fluid" src="img/icon/icon_cellphone.png" alt="">
-                    <p align="center">
-                        RWD設計適用任何裝置，可隨時隨地使用服務
-                    </p>
-                </div>
-            </div>
-            <hr>
-            <div class="post-preview">
-                <h2 class="section-heading">
-                    How Does It Work?
-                </h2>
-                <img class="img-fluid" src="img/icon/work_flow.png" alt="">
-                <span class="caption text-muted">InAnalysis Work Flow</span>
-                <h5>
-                    Project Management
-                </h5>
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
                 <p>
-                    能夠察看所有專案相關資訊, 新增專案, 修改專案, 刪除專案。
-                    新增專案後點選KDD，進入專案KDD流程
+                    分類是根據已知樣本的某些特徵，判斷一個新的樣本屬於哪種已知的樣本類。分類問題也被稱為監督式學習
+                    (supervised classification)，根據已知訓練區提供的樣本，通過計算選擇特徵參數，建立判別函數以對樣本進行的分類。
                 </p>
-                <h5>
-                    KDD Process
-                </h5>
                 <p>
-                    Data Pre-process, Feature Selection, Model Training, Model Prediction。
-                    訓練出Model後可以在Model Management建置API
+                    範例問題為：藉由Iris資料（<a href="https://archive.ics.uci.edu/ml/datasets/iris">UCI Data Set</a>）
+                    的sepal(萼片)長寬和petal(花瓣)長寬來分類iris的種類。<br>
+                    Iris資料欄位說明：<br>
+                    1. sepal length in cm <br>
+                    2. sepal width in cm <br>
+                    3. petal length in cm <br>
+                    4. petal width in cm <br>
+                    5. class: <br>
+                    -- Iris Setosa <br>
+                    -- Iris Versicolour <br>
+                    -- Iris Virginica <br>
+                    訓練資料為：iris.data中各iris類別分別取80%的資料<br>
+                    測試資料為：各iris類別剩下20%資料
                 </p>
-                <h5>
-                    API Management
-                </h5>
-                <p>
-                    能夠察看使用者建立的API, 修改API, 刪除API。透過API服務，輕鬆將模型佈署至任何應用。
-                </p>
-            </div>
-            <hr>
-            <div class="post-preview">
-                <h2 class="section-heading">
-                    What Do They Think?
-                </h2>
-                <p>
-                    Stories of people inspired by InAnalysis to change their life through Machine Learning.
-                </p>
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 mx-auto">
-                        <img class="img-fluid" src="img/icon/icon_user1.png" alt="">
-                        <p align="center">
-                            王小鎂覺得很好用
-                        </p>
-                    </div>
-                    <div class="col-lg-4 col-md-4 mx-auto">
-                        <img class="img-fluid" src="img/icon/icon_user2.png" alt="">
-                        <p align="center">
-                            王小鎂覺得很好用
-                        </p>
-                    </div>
-                    <div class="col-lg-4 col-md-4 mx-auto">
-                        <img class="img-fluid" src="img/icon/jacky.png" alt="">
-                        <p align="center">
-                            李小傑覺得很好用
-                        </p>
-                    </div>
+                <h2 class="section-heading">模型訓練流程</h2>
                 </div>
-                <button type="button" class="btn btn-primary btn-lg btn-block"
-                        onclick="window.open('http://140.112.26.236:8008','_blank')">
-                    立即試用！
-                </button>
-            </div>
         </div>
     </div>
-</div>
+</article>
 
 <hr>
 

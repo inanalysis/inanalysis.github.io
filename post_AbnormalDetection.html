@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
 
@@ -63,113 +63,60 @@
 </nav>
 
 <!-- Page Header -->
-<header class="masthead" style="background-image: url('img/home-bg.jpg')">
+<header class="masthead" style="background-image: url('img/post-bg.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
-                <div class="site-heading">
-                    <h1>InAnalysis</h1>
-                    <span class="subheading">快速訓練模型、測試資料和輕鬆建置API的機器學習服務平台</span>
+                <div class="post-heading">
+                    <h1>Abnormal Detection</h1>
+                    <h2 class="subheading">異常檢測（Abnormal detection）通過尋找與其他資料最不符合的例項來檢測出未標記測試資料的異常。</h2>
+                    <span class="meta">Posted by
+                <a href="#">InAnalysis</a>
+                on August 23, 2017</span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-            <h2 class="section-heading">
-                Welcome to InAnalysis!
-            </h2>
-            <p>
-                InAnalysis機器學習平台能將資料變成可行動的商業智慧。開發者無需具備任何機器學習經驗，就能輕鬆使用。
-            </p>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 mx-auto">
-                    <img class="img-fluid" src="img/icon/icon_flow.jpg" alt="">
-                    <p align="center">
-                        流暢KDD流程，掌握模型訓練與資料狀況
-                    </p>
-                </div>
-                <div class="col-lg-4 col-md-4 mx-auto">
-                    <img class="img-fluid" src="img/icon/icon_api.png" alt="">
-                    <p align="center">
-                        快速建置API，輕鬆將模型佈署至任何應用
-                    </p>
-                </div>
-                <div class="col-lg-4 col-md-4 mx-auto">
-                    <img class="img-fluid" src="img/icon/icon_cellphone.png" alt="">
-                    <p align="center">
-                        RWD設計適用任何裝置，可隨時隨地使用服務
-                    </p>
-                </div>
-            </div>
-            <hr>
-            <div class="post-preview">
-                <h2 class="section-heading">
-                    How Does It Work?
-                </h2>
-                <img class="img-fluid" src="img/icon/work_flow.png" alt="">
-                <span class="caption text-muted">InAnalysis Work Flow</span>
-                <h5>
-                    Project Management
-                </h5>
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
                 <p>
-                    能夠察看所有專案相關資訊, 新增專案, 修改專案, 刪除專案。
-                    新增專案後點選KDD，進入專案KDD流程
+                    有三大類異常檢測演算法。
+                    在假設資料集中大多數例項都是正常的前提下，無監督異常檢測方法能通過尋找與其他資料最不符合的例項來檢測出未標記測試資料的異常。
+                    監督式異常檢測方法需要一個已經被標記「正常」與「異常」的資料集，並涉及到訓練分類器
+                    （與許多其他的統計分類問題的關鍵區別是異常檢測的內在不均衡性）。
+                    半監督式異常檢測方法根據一個給定的正常訓練資料集建立一個表示正常行為的模型，然後檢測由學習模型生成的測試例項的可能性。
                 </p>
-                <h5>
-                    KDD Process
-                </h5>
                 <p>
-                    Data Pre-process, Feature Selection, Model Training, Model Prediction。
-                    訓練出Model後可以在Model Management建置API
+                    範例問題為：藉由紅酒資料（<a href="https://archive.ics.uci.edu/ml/datasets/wine+quality">UCI Data Set</a>）
+                    ，判斷品質是否異常。<br>
+                    紅酒資料欄位說明：<br>
+                    1 - fixed acidity <br>
+                    2 - volatile acidity <br>
+                    3 - citric acid <br>
+                    4 - residual sugar <br>
+                    5 - chlorides <br>
+                    6 - free sulfur dioxide <br>
+                    7 - total sulfur dioxide <br>
+                    8 - density <br>
+                    9 - pH <br>
+                    10 - sulphates <br>
+                    11 - alcohol <br>
+                    訓練資料為：正常品質的紅酒資料（quality介於4到7之間）<br>
+                    測試資料為：將quality介於4到7之間的紅酒資料標示為 1 （正常），其他則標示為 -1（異常）
                 </p>
-                <h5>
-                    API Management
-                </h5>
-                <p>
-                    能夠察看使用者建立的API, 修改API, 刪除API。透過API服務，輕鬆將模型佈署至任何應用。
-                </p>
-            </div>
-            <hr>
-            <div class="post-preview">
-                <h2 class="section-heading">
-                    What Do They Think?
-                </h2>
-                <p>
-                    Stories of people inspired by InAnalysis to change their life through Machine Learning.
-                </p>
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 mx-auto">
-                        <img class="img-fluid" src="img/icon/icon_user1.png" alt="">
-                        <p align="center">
-                            王小鎂覺得很好用
-                        </p>
-                    </div>
-                    <div class="col-lg-4 col-md-4 mx-auto">
-                        <img class="img-fluid" src="img/icon/icon_user2.png" alt="">
-                        <p align="center">
-                            王小鎂覺得很好用
-                        </p>
-                    </div>
-                    <div class="col-lg-4 col-md-4 mx-auto">
-                        <img class="img-fluid" src="img/icon/jacky.png" alt="">
-                        <p align="center">
-                            李小傑覺得很好用
-                        </p>
-                    </div>
-                </div>
-                <button type="button" class="btn btn-primary btn-lg btn-block"
-                        onclick="window.open('http://140.112.26.236:8008','_blank')">
-                    立即試用！
-                </button>
+                <img class="img-fluid" src="img/demo/abnormal/ab_canvas.jpg" alt="">
+                <span class="caption text-muted">Machine Learning Canvas_Abnormal Detection</span>
+                <h2 class="section-heading">模型訓練流程</h2>
+
             </div>
         </div>
     </div>
-</div>
+</article>
 
 <hr>
 
