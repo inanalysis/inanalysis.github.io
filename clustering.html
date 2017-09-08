@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<!-- Page Header -->
+<header class="masthead" style="background-image: url('img/post-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="post-heading">
+                    <h1>Clustering</h1>
+                    <h2 class="subheading">分群（Clustering）相似於分類問題，但不同於分類問題的地方是分群在訓練模型時，不會預先給定類別的定義。</h2>
+                    <span class="meta">Posted by
+                <a href="#">InAnalysis</a>
+                on August 23, 2017</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <p>
+                    分群是把相似的對象通過靜態分類的方法分成不同的組別或者更多的子集（subset），
+                    這樣讓在同一個子集中的成員對象都有相似的一些屬性，常見的包括在坐標系中更加短的空間距離等。
+                    一般把數據聚類歸納為一種非監督式學習。
+                </p>
+                <p>
+                    範例問題為：藉由Iris資料（<a href="https://archive.ics.uci.edu/ml/datasets/iris">UCI Data Set</a>）
+                    的sepal(萼片)長寬和petal(花瓣)長寬來將資料分群。<br>
+                    Iris資料欄位說明：<br>
+                    1. sepal length in cm <br>
+                    2. sepal width in cm <br>
+                    3. petal length in cm <br>
+                    4. petal width in cm <br>
+                    5. class: <br>
+                    -- Iris Setosa <br>
+                    -- Iris Versicolour <br>
+                    -- Iris Virginica <br>
+                    訓練資料為：iris.data移除class欄位
+                </p>
+                <h2 class="section-heading">模型訓練流程</h2>
+            </div>
+        </div>
+    </div>
+</article>
