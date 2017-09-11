@@ -49,9 +49,33 @@ layout: default
                     訓練資料為：正常品質的紅酒資料（quality介於4到7之間）<br>
                     測試資料為：將quality介於4到7之間的紅酒資料標示為 1 （正常），其他則標示為 -1（異常）
                 </p>
-                <img class="img-fluid" src="img/demo/abnormal/ab_canvas.jpg" alt="">
+                <img class="img-fluid" src="img/demo/abnormal/canvas.jpg" alt="">
                 <span class="caption text-muted">Machine Learning Canvas_Abnormal Detection</span>
                 <h2 class="section-heading">模型訓練流程</h2>
+                <h4>
+                    0.Data Input
+                </h4>
+                <p>檔案上傳</p>
+                <img class="img-fluid" src="img/demo/abnormal/data_input.png" alt="">
+                <span class="caption text-muted">Data Upload： Select Process Stage</span>
+                <img class="img-fluid" src="img/demo/abnormal/data_input2.png" alt="">
+                <span class="caption text-muted">Data Upload： Select Function</span>
+                <h4>
+                    1.Data Pre-process
+                </h4>
+                <p>從Function欄位中, 選擇Data Pre-processing按鈕, 可進行資料預處理(Pre-process)</p>
+                <img class="img-fluid" src="img/demo/abnormal/data_step1.png" alt="">
+                <span class="caption text-muted">Data Pre-view</span>
+                <h4>
+                    2.Feature Selection
+                </h4>
+                <p>利用Pearson Correlation演算法計算各個Feature間的關係程度,以作為選擇Feature的參考</p>
+                <img class="img-fluid" src="img/demo/abnormal/Feature_2.png" alt="">
+                <span class="caption text-muted">Calculate Pearson Correlation</span>
+                <img class="img-fluid" src="img/demo/abnormal/Feature_3.png" alt="">
+                <span class="caption text-muted">Show Feature Weight Matrix</span>
+                <img class="img-fluid" src="img/demo/abnormal/Feature_4.png" alt="">
+                <span class="caption text-muted">Select Feature and Save</span>
 
             </div>
         </div>
