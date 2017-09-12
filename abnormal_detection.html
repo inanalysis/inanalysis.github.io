@@ -31,26 +31,31 @@ layout: default
                     （與許多其他的統計分類問題的關鍵區別是異常檢測的內在不均衡性）。
                     半監督式異常檢測方法根據一個給定的正常訓練資料集建立一個表示正常行為的模型，然後檢測由學習模型生成的測試例項的可能性。
                 </p>
-                <p>
-                    範例問題為：藉由紅酒資料（<a href="https://archive.ics.uci.edu/ml/datasets/wine+quality">UCI Data Set</a>）
-                    ，判斷品質是否異常。<br>
-                    紅酒資料欄位說明：<br>
-                    1 - fixed acidity <br>
-                    2 - volatile acidity <br>
-                    3 - citric acid <br>
-                    4 - residual sugar <br>
-                    5 - chlorides <br>
-                    6 - free sulfur dioxide <br>
-                    7 - total sulfur dioxide <br>
-                    8 - density <br>
-                    9 - pH <br>
-                    10 - sulphates <br>
-                    11 - alcohol <br>
-                    訓練資料為：正常品質的紅酒資料（quality介於4到7之間）<br>
-                    測試資料為：將quality介於4到7之間的紅酒資料標示為 1 （正常），其他則標示為 -1（異常）
-                </p>
+                <h2 class="section-heading">機器學習畫布</h2>
                 <img class="img-fluid" src="img/demo/abnormal/canvas.jpg" alt="">
                 <span class="caption text-muted">Machine Learning Canvas_Abnormal Detection</span>
+                <h5>Value Propositions</h5>
+                <p>由紅酒成份資料預測品質是否不在正常範圍</p>
+                <h5>Data Sources</h5>
+                <p>UC Irvine Machine Learning Repository: Wine Quality Data Set</p>
+                                <h5>Collecting Data</h5>
+                <p>先將quality介於4-8之間的資料設為正常,其餘的資料設為異常,從正常資料中取出80%作為訓練檔,剩下的20%與異常資料合併成測試檔</p>
+                                <h5>Features</h5>
+                <p> 紅酒資料欄位說明：<br>
+                    1 - fixed acidity 固定酸度<br>
+                    2 - volatile acidity 揮發酸度<br>
+                    3 - citric acid 檸檬酸<br>
+                    4 - residual sugar 餘糖<br>
+                    5 - chlorides 氯化物<br>
+                    6 - free sulfur dioxide 自由基二氧化硫<br>
+                    7 - total sulfur dioxide 總二氧化硫<br>
+                    8 - density 密度<br>
+                    9 - pH 酸鹼度<br>
+                    10 - sulphates 硫酸鹽<br>
+                    11 - alcohol 酒精濃度<br>
+                </p>
+                                <h5>Building Models</h5>
+                <p>利用品質正常的紅酒成份資料作為訓練檔,用One-Class SVM演算法建立預測模型</p>
                 <h2 class="section-heading">模型訓練流程</h2>
                 <h4>
                     0.Data Input
