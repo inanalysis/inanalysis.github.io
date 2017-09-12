@@ -29,22 +29,31 @@ layout: default
                     這樣讓在同一個子集中的成員對象都有相似的一些屬性，常見的包括在坐標系中更加短的空間距離等。
                     一般把數據聚類歸納為一種非監督式學習。
                 </p>
-                <p>
-                    範例問題為：藉由Iris資料（<a href="https://archive.ics.uci.edu/ml/datasets/iris">UCI Data Set</a>）
-                    的sepal(萼片)長寬和petal(花瓣)長寬來將資料分群。<br>
-                    Iris資料欄位說明：<br>
-                    1. sepal length in cm <br>
-                    2. sepal width in cm <br>
-                    3. petal length in cm <br>
-                    4. petal width in cm <br>
+                <h2 class="section-heading">機器學習畫布</h2>
+                <img class="img-fluid" src="img/demo/clustering/canvas.jpg" alt="">
+                <span class="caption text-muted">Machine Learning Canvas_Clustering</span>
+                <h5>Value Propositions</h5>
+                <p>由iris的sepal(萼片)長寬和petal(花瓣)長寬來將iris分群</p>
+                <h5>Data Sources</h5>
+                <p>UC Irvine Machine Learning Repository:
+                    <a href="http://archive.ics.uci.edu/ml/datasets/Iris?ref=datanews.io">Iris Data Set</a>
+                </p>
+                <h5>Collecting Data</h5>
+                <p>將iris.data中的class欄位刪除作為訓練檔</p>
+                <h5>Features</h5>
+                <p> 資料欄位說明：<br>
+                    1. sepal (萼片) length in cm <br>
+                    2. sepal (萼片) width in cm <br>
+                    3. petal (花瓣) length in cm <br>
+                    4. petal (花瓣) width in cm <br>
                     5. class: <br>
                     -- Iris Setosa <br>
                     -- Iris Versicolour <br>
                     -- Iris Virginica <br>
-                    訓練資料為：iris.data移除class欄位
                 </p>
-                <img class="img-fluid" src="img/demo/clustering/canvas.jpg" alt="">
-                <span class="caption text-muted">Machine Learning Canvas_Clustering</span>
+                <h5>Building Models</h5>
+                <p>將iris作為訓練檔，用kmeans演算法建立預測模型</p>
+
                 <h2 class="section-heading">模型訓練流程</h2>
                 <h4>
                     0.Data Input

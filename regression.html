@@ -27,29 +27,37 @@ layout: default
                 <p>
                     迴歸目的在於了解兩個或多個變數間是否相關、相關方向與強度，並建立數學模型以便觀察特定變數來預測研究者感興趣的變數。
                 </p>
-                <p>
-                    範例問題為：藉由波士頓房產資料（<a href="http://lib.stat.cmu.edu/datasets/boston">CMU Data Set</a>）
-                    建立房價回歸模型，以預測新的房產價格。<br>
-                    房產資料欄位說明：<br>
-                    1 - CRIM: per capita crime rate by town<br>
-                    2 - ZN: proportion of residential land zoned for lots over 25,000 sq.ft.<br>
-                    3 - INDUS: proportion of non-retail business acres per town<br>
-                    4 - CHAS: Charles River dummy variable (= 1 if tract bounds river; 0 otherwise)<br>
-                    5 - NOX: nitric oxides concentration (parts per 10 million)<br>
-                    6 - RM: average number of rooms per dwelling<br>
-                    7 - AGE: proportion of owner-occupied units built prior to 1940<br>
-                    8 - DIS: weighted distances to five Boston employment centres<br>
-                    9 - RAD: index of accessibility to radial highways<br>
-                    10 - TAX: full-value property-tax rate per $10,000<br>
-                    11 - PTRATIO: pupil-teacher ratio by town<br>
-                    12 - B: 1000(Bk - 0.63)^2 where Bk is the proportion of blacks by town<br>
-                    13 - LSTAT: % lower status of the population<br>
-                    14 - MEDV: Median value of owner-occupied homes in $1000's<br>
-                    訓練資料為：80%的資料<br>
-                    測試資料為：20%的資料
-                </p>
+                <h2 class="section-heading">機器學習畫布</h2>
                 <img class="img-fluid" src="img/demo/regression/canvas.jpg" alt="">
                 <span class="caption text-muted">Machine Learning Canvas_Regression</span>
+                <h5>Value Propositions</h5>
+                <p>藉由波士頓房產資料建立房價回歸模型，以預測新的房產價格。</p>
+                <h5>Data Sources</h5>
+                <p>UC Irvine Machine Learning Repository:
+                    <a href="http://lib.stat.cmu.edu/datasets/boston">Boston Data Set</a>
+                </p>
+                <h5>Collecting Data</h5>
+                <p>資料取出80%作為訓練檔，剩下的20%作為測試檔</p>
+                <h5>Features</h5>
+                <p> 資料欄位說明：<br>
+                    1 - CRIM:per capita crime rate by town<br>
+                    2 - ZN:proportion of residential land zoned for lots over 25,000 sq.ft.<br>
+                    3 - INDUS:proportion of non-retail business acres per town<br>
+                    4 - CHAS:Charles River dummy variable (= 1 if tract bounds river; 0 otherwise)<br>
+                    5 - NOX:nitric oxides concentration (parts per 10 million)<br>
+                    6 - RM:average number of rooms per dwelling<br>
+                    7 - AGE:proportion of owner-occupied units built prior to 1940<br>
+                    8 - DIS:weighted distances to five Boston employment centres<br>
+                    9 - RAD:index of accessibility to radial highways<br>
+                    10 - TAX:full-value property-tax rate per $10,000<br>
+                    11 - PTRATIO:pupil-teacher ratio by town<br>
+                    12 - B:1000(Bk - 0.63)^2 where Bk is the proportion of blacks by town<br>
+                    13 - LSTAT:% lower status of the population<br>
+                    14 - MEDV:Median value of owner-occupied homes in $1000's<br>
+                </p>
+                <h5>Building Models</h5>
+                <p>用Linear Regression演算法建立預測模型</p>
+
                 <h2 class="section-heading">模型訓練流程</h2>
                 <h4>
                     0.Data Input
