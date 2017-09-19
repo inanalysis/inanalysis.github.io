@@ -58,29 +58,44 @@ layout: default
 
                 <h2 class="section-heading">模型訓練流程</h2>
                 <h4>
-                    0.Data Input
+                    0.Create Project and Data Input
                 </h4>
+                <p>建立Clustering專案</p>
+                <img class="img-fluid" src="img/demo/abnormal/project.png" alt="">
+                <span class="caption text-muted">Project Management： Select Project Type</span>
                 <p>檔案上傳</p>
                 <img class="img-fluid" src="img/demo/abnormal/data_input.png" alt="">
-                <span class="caption text-muted">Data Upload： Select Process Stage</span>
-                <img class="img-fluid" src="img/demo/abnormal/data_input2.png" alt="">
-                <span class="caption text-muted">Data Upload： Select Function</span>
+                <span class="caption text-muted">Data Upload： Select Process Stage and Upload</span>
                 <h4>
                     1.Data Pre-process
                 </h4>
-                <p>從Function欄位中, 選擇Data Pre-processing按鈕, 可進行資料預處理(Pre-process)</p>
-                <img class="img-fluid" src="img/demo/abnormal/data_step1.png" alt="">
-                <span class="caption text-muted">Data Pre-view</span>
+                <p>從Function欄位中, 選擇Data Pre-processing按鈕, 進行資料預處理(Pre-process)</p>
+                <img class="img-fluid" src="img/demo/abnormal/preprocess_01.png" alt="">
+                <p>選擇資料要進行哪些處理並預覽</p>
+                <img class="img-fluid" src="img/demo/abnormal/preprocess_02.png" alt="">
+                <p>儲存處理過的資料</p>
+                <img class="img-fluid" src="img/demo/abnormal/preprocess_03.png" alt="">
+                <span class="caption text-muted">Data Pre-process</span>
                 <h4>
                     2.Feature Selection
                 </h4>
                 <p>利用Pearson Correlation演算法計算各個Feature間的關係程度,以作為選擇Feature的參考</p>
-                <img class="img-fluid" src="img/demo/abnormal/Feature_2.png" alt="">
-                <span class="caption text-muted">Calculate Pearson Correlation</span>
-                <img class="img-fluid" src="img/demo/abnormal/Feature_3.png" alt="">
+                <img class="img-fluid" src="img/demo/abnormal/feature_01.png" alt="">
+                <span class="caption text-muted">Feature Selection</span>
+                <img class="img-fluid" src="img/demo/abnormal/feature_02.png" alt="">
                 <span class="caption text-muted">Show Feature Weight Matrix</span>
-                <img class="img-fluid" src="img/demo/abnormal/Feature_4.png" alt="">
+                <img class="img-fluid" src="img/demo/abnormal/feature_03.png" alt="">
                 <span class="caption text-muted">Select Feature and Save</span>
+                <h4>
+                    3.Model Training
+                </h4>
+                <p>利用上傳的資料進行模型訓練</p>
+                <img class="img-fluid" src="img/demo/abnormal/train_01.png" alt="">
+                <span class="caption text-muted">Model Training</span>
+                <img class="img-fluid" src="img/demo/abnormal/train_02.png" alt="">
+                <span class="caption text-muted">Set Parameters</span>
+                <img class="img-fluid" src="img/demo/abnormal/train_03.png" alt="">
+                <span class="caption text-muted">Preview Model</span>
                 <hr>
                 <button type="button" class="btn btn-primary btn-lg btn-block"
                         onclick="window.open('http://140.112.26.236:8008','_blank')">
