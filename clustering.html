@@ -25,15 +25,14 @@ layout: default
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <p>
-                    分群是把相似的對象通過靜態分類的方法分成不同的組別或者更多的子集（subset），
-                    這樣讓在同一個子集中的成員對象都有相似的一些屬性，常見的包括在坐標系中更加短的空間距離等。
-                    一般把數據聚類歸納為一種非監督式學習。
+                    群聚（Cluster）是一群資料項目（data objects），而分群（Clustering）這個動作是把資料依相似性分成幾個群聚
+                    ，同一群聚內資料相似愈相似愈好，不同群聚之間的資料差異越大越好。<br>
+                    分群是非監督式（Unsupervised）學習，無預先設好的類別標籤。<br>
+                    常見的應用為：了解資料分佈的工具(stand-alone tool)，或作為資料前處理（preprocessing）的方法。
                 </p>
-                <h2 class="section-heading">機器學習畫布</h2>
-                <img class="img-fluid" src="img/demo/clustering/canvas.jpg" alt="">
-                <span class="caption text-muted">
-                    <a href="https://goo.gl/Hek2N9">Machine Learning Canvas_Clustering</a>
-                </span>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zqKFH7WNmfE?rel=0" frameborder="0" allowfullscreen></iframe>
+                <hr>
+
                 <h5>Value Propositions</h5>
                 <p>由iris的sepal(萼片)長寬和petal(花瓣)長寬來將iris分群</p>
                 <h5>Data Sources</h5>
@@ -42,6 +41,8 @@ layout: default
                 </p>
                 <h5>Collecting Data</h5>
                 <p>將iris.data中的class欄位刪除作為訓練檔</p>
+                <img class="img-fluid" src="img/demo/clustering/iris.png" alt="">
+                <span class="caption text-muted">Iris sepal and petal</span>
                 <h5>Features</h5>
                 <p> 資料欄位說明：<br>
                     1. sepal (萼片) length in cm <br>
@@ -96,6 +97,14 @@ layout: default
                 <span class="caption text-muted">Set Parameters</span>
                 <img class="img-fluid" src="img/demo/clustering/train_03.png" alt="">
                 <span class="caption text-muted">Preview Model</span>
+
+                <hr>
+                <h2 class="section-heading">機器學習畫布</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Qpo5XzlUrwE?rel=0" frameborder="0" allowfullscreen></iframe>
+                <img class="img-fluid" src="img/demo/clustering/canvas.jpg" alt="">
+                <span class="caption text-muted">
+                    <a href="https://goo.gl/Hek2N9">Machine Learning Canvas_Clustering</a>
+                </span>
                 <hr>
                 <button type="button" class="btn btn-primary btn-lg btn-block"
                         onclick="window.open('http://140.112.26.236:8008','_blank')">
