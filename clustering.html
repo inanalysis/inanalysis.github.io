@@ -24,23 +24,24 @@ layout: default
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
+                <h2 class="section-heading">Introduction</h2>
                 <p>
                     群聚（Cluster）是一群資料項目（data objects），而分群（Clustering）這個動作是把資料依相似性分成幾個群聚
                     ，同一群聚內資料相似愈相似愈好，不同群聚之間的資料差異越大越好。<br>
                     分群是非監督式（Unsupervised）學習，無預先設好的類別標籤。<br>
                     常見的應用為：了解資料分佈的工具(stand-alone tool)，或作為資料前處理（preprocessing）的方法。
                 </p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/zqKFH7WNmfE?rel=0" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zqKFH7WNmfE?rel=0" frameborder="0"
+                        allowfullscreen></iframe>
                 <hr>
-
-                <h5>Value Propositions</h5>
-                <p>由iris的sepal(萼片)長寬和petal(花瓣)長寬來將iris分群</p>
-                <h5>Data Sources</h5>
-                <p>UC Irvine Machine Learning Repository:
-                    <a href="http://archive.ics.uci.edu/ml/datasets/Iris?ref=datanews.io">Iris Data Set</a>
-                </p>
-                <h5>Collecting Data</h5>
-                <p>將iris.data中的class欄位刪除作為訓練檔</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <h2 class="section-heading">Sample Problem and Data</h2>
+                <h5>Sample Problem</h5>
+                <p>由iris的sepal(萼片)長寬和petal(花瓣)長寬將iris資料分群</p>
+                <p>建立模型流程約需5分鐘</p>
                 <img class="img-fluid" src="img/demo/clustering/iris.png" alt="">
                 <span class="caption text-muted">Iris sepal and petal</span>
                 <h5>Features</h5>
@@ -54,10 +55,23 @@ layout: default
                     -- Iris Versicolour <br>
                     -- Iris Virginica <br>
                 </p>
+                <h5>Data Sources</h5>
+                <p>UC Irvine Machine Learning Repository:
+                    <a href="http://archive.ics.uci.edu/ml/datasets/Iris?ref=datanews.io">Iris Data Set</a>
+                </p>
+                <h5>Collecting Training Data</h5>
+                <p>將iris.data中的class欄位刪除，令存成csv檔作為訓練檔</p>
                 <h5>Building Models</h5>
-                <p>將iris作為訓練檔，用kmeans演算法建立預測模型</p>
-
-                <h2 class="section-heading">模型訓練流程</h2>
+                <p>用kmeans演算法建立預測模型</p>
+                <h5>Result Preview</h5>
+                <img class="img-fluid" src="img/demo/clustering/iris_clustering.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <h2 class="section-heading">Step by Step</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zqKFH7WNmfE?rel=0" frameborder="0"
+                        allowfullscreen></iframe>
                 <h4>
                     0.Create Project and Data Input
                 </h4>
@@ -97,8 +111,11 @@ layout: default
                 <span class="caption text-muted">Set Parameters</span>
                 <img class="img-fluid" src="img/demo/clustering/train_03.png" alt="">
                 <span class="caption text-muted">Preview Model</span>
-
                 <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
                 <h2 class="section-heading">機器學習畫布</h2>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qpo5XzlUrwE?rel=0" frameborder="0" allowfullscreen></iframe>
                 <img class="img-fluid" src="img/demo/clustering/canvas.jpg" alt="">
