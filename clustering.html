@@ -24,7 +24,7 @@ layout: default
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
-                <h2 class="section-heading">Introduction</h2>
+                <h2 class="section-heading">機器學習演算法介紹</h2>
                 <hr>
                 <p>
                     群聚（Cluster）是一群資料項目（data objects），而分群（Clustering）這個動作是把資料依相似性分成幾個群聚
@@ -32,20 +32,20 @@ layout: default
                     分群是非監督式（Unsupervised）學習，無預先設好的類別標籤。<br>
                     常見的應用為：了解資料分佈的工具(stand-alone tool)，或作為資料前處理（preprocessing）的方法。
                 </p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/zqKFH7WNmfE?rel=0" frameborder="0"
-                        allowfullscreen></iframe>
+                <iframe width="560" height="315" align="middle" src="https://www.youtube.com/embed/zqKFH7WNmfE?rel=0"
+                        frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
-                <h2 class="section-heading">Sample Problem and Data</h2>
+                <h2 class="section-heading">範例</h2>
                 <hr>
-                <h5>Sample Problem</h5>
+                <h5>欲解決的問題</h5>
                 <p>由iris的sepal(萼片)長寬和petal(花瓣)長寬將iris資料分群</p>
                 <img class="img-fluid" src="img/demo/clustering/iris.png" alt="">
                 <span class="caption text-muted">Iris sepal and petal</span>
-                <h5>Features</h5>
-                <p> 資料欄位說明：<br>
+                <h5>資料欄位說明</h5>
+                <p>
                     1. sepal (萼片) length in cm <br>
                     2. sepal (萼片) width in cm <br>
                     3. petal (花瓣) length in cm <br>
@@ -55,15 +55,15 @@ layout: default
                     -- Iris Versicolour <br>
                     -- Iris Virginica <br>
                 </p>
-                <h5>Data Sources</h5>
+                <h5>資料來源</h5>
                 <p>UC Irvine Machine Learning Repository:
                     <a href="http://archive.ics.uci.edu/ml/datasets/Iris?ref=datanews.io">Iris Data Set</a>
                 </p>
-                <h5>Collecting Training Data</h5>
+                <h5>建立訓練資料</h5>
                 <p>將iris.data中的class欄位刪除，令存成csv檔作為訓練檔</p>
-                <h5>Building Models</h5>
+                <h5>模型建立方法</h5>
                 <p>用kmeans演算法建立預測模型</p>
-                <h5>Result Preview</h5>
+                <h5>模型結果預覽</h5>
                 <img class="img-fluid" src="img/demo/clustering/iris_clustering.png" alt="">
             </div>
         </div>
@@ -71,26 +71,34 @@ layout: default
             <div class="col-lg-8 col-md-10 mx-auto">
                 <h2 class="section-heading">Step by Step</h2>
                 <hr>
-                <p></p>
+                <p>透過以下流程操作示範，可以建立Iris資料分群模型</p>
                 <p>[ 整個流程約5分鐘 ]</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/zqKFH7WNmfE?rel=0" frameborder="0"
-                        allowfullscreen></iframe>
+                <iframe width="560" height="315" align="middle" src="https://www.youtube.com/embed/zqKFH7WNmfE?rel=0"
+                        frameborder="0" allowfullscreen ></iframe>
                 <h4>
                     0.Create Project and Data Input
                 </h4>
+                <img class="img-fluid" src="img/demo/intro/01_index.png" alt="">
+                <img class="img-fluid" src="img/demo/intro/02_project.png" alt="">
                 <p>建立Clustering專案</p>
                 <img class="img-fluid" src="img/demo/clustering/project.png" alt="">
                 <span class="caption text-muted">Project Management： Select Project Type</span>
                 <p>檔案上傳</p>
+                <img class="img-fluid" src="img/demo/clustering/03_KDD_upload.png" alt="">
                 <img class="img-fluid" src="img/demo/clustering/data_input.png" alt="">
                 <span class="caption text-muted">Data Upload： Select Process Stage and Upload</span>
+                <img class="img-fluid" src="img/demo/clustering/04_dataviewer.png" alt="">
                 <h4>
                     1.Data Pre-process
                 </h4>
+                <img class="img-fluid" src="img/demo/clustering/04_KDD_preprocess.png" alt="">
                 <p>從Function欄位中, 選擇Data Pre-processing按鈕, 進行資料預處理(Pre-process)</p>
                 <img class="img-fluid" src="img/demo/clustering/preprocess_01.png" alt="">
+                <img class="img-fluid" src="img/demo/clustering/04_KDD_preprocess.png" alt="">
                 <p>選擇資料要進行哪些處理並預覽</p>
-                <img class="img-fluid" src="img/demo/clustering/preprocess_02.png" alt="">
+                <img class="img-fluid" src="img/demo/clustering/05_preprocess-1.png" alt="">
+                <img class="img-fluid" src="img/demo/clustering/05_preprocess-2.png" alt="">
+                <img class="img-fluid" src="img/demo/clustering/05_preprocess-3.png" alt="">
                 <p>儲存處理過的資料</p>
                 <img class="img-fluid" src="img/demo/clustering/preprocess_03.png" alt="">
                 <span class="caption text-muted">Data Pre-process</span>
@@ -98,6 +106,7 @@ layout: default
                     2.Feature Selection
                 </h4>
                 <p>利用Pearson Correlation演算法計算各個Feature間的關係程度,以作為選擇Feature的參考</p>
+                <img class="img-fluid" src="img/demo/clustering/06_KDD_feature.png" alt="">
                 <img class="img-fluid" src="img/demo/clustering/feature_01.png" alt="">
                 <span class="caption text-muted">Feature Selection</span>
                 <img class="img-fluid" src="img/demo/clustering/feature_02.png" alt="">
@@ -122,14 +131,15 @@ layout: default
                 <hr>
                 <p>Machine Learning Canvas(機器學習畫布)的框架分為4個部分：問題定義、模型預測、模型學習和系統評估，
                     這個畫布能夠幫助機器學習團隊釐清開發應用時所會面臨的問題</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Qpo5XzlUrwE?rel=0" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" align="middle" src="https://www.youtube.com/embed/Qpo5XzlUrwE?rel=0"
+                        frameborder="0" allowfullscreen></iframe>
                 <img class="img-fluid" src="img/demo/clustering/canvas.jpg" alt="">
                 <span class="caption text-muted">
                     <a href="https://goo.gl/Hek2N9">Machine Learning Canvas_Clustering</a>
                 </span>
                 <hr>
                 <button type="button" class="btn btn-primary btn-lg btn-block"
-                        onclick="window.open('http://140.112.26.236:8008','_blank')">
+                        onclick="window.open('http://ntuesoe.com:8008','_blank')">
                     立即試用！
                 </button>
             </div>
