@@ -153,15 +153,36 @@ layout: default
                     3.資料前處理 Data Pre-process
                 </h4>
                 <img class="img-fluid" src="img/demo/clustering/data_input.png" alt="">
-                <p>從Function欄位中, 選擇Data Pre-processing按鈕, 進行資料預處理(Pre-process)</p>
-                <img class="img-fluid" src="img/demo/clustering/preprocess_01.png" alt="">
-                <p>選擇資料要進行哪些處理並預覽</p>
+                <p>從Function欄位中, 選擇Data Pre-processing按鈕, 開始進行資料預處理(Pre-process)</p>
+
                 <img class="img-fluid" src="img/demo/clustering/05_preprocess-1.png" alt="">
+                <blockquote><p><small>
+                    Step 1<br>
+                    1. 正在處理的資料檔案名稱，與檔案所在的Server<br>
+                    2. 選擇欄位<br>
+                    3. 預覽該欄位的資料分佈直方圖<br>
+                    4. 取消回到KDD流程頁面<br>
+                </small></p></blockquote>
                 <img class="img-fluid" src="img/demo/clustering/05_preprocess-2.png" alt="">
+                <blockquote><p><small>
+                    Step 2<br>
+                    1. 對資料進行缺值過濾，如果該列資料有NAN則會刪除該列資料，這個步驟能夠確保訓練時不會因為資料不齊全而出現錯誤<br>
+                    2. 對該欄位資料進行利用常態分佈離群值過濾，1 std表示將過慮掉1個標準差以外的離群資料，0 std表示不對資料做離群值過濾<br>
+                    3. 執行上述處理並預覽該欄位處理過後的資料分佈直方圖<br>
+                    4. 取消處理動作回到Step 1選擇欄位<br>
+                </small></p></blockquote>
                 <img class="img-fluid" src="img/demo/clustering/05_preprocess-3.png" alt="">
-                <p>儲存處理過的資料</p>
-                <img class="img-fluid" src="img/demo/clustering/preprocess_03.png" alt="">
-                <span class="caption text-muted">Data Pre-process</span>
+                <blockquote><p><small>
+                    Step 3<br>
+                    1. 選擇Normalize的演算法<br>
+                    2. 選擇欲進行Normalize的資料欄位，進行Normalize能夠將資料Scale到相同的range<br>
+                    3. 輸入處理過資料的新檔案名稱<br>
+                    4. 儲存處理過的新資料，並回到KDD流程頁面
+                    5. 取消處理動作，不儲存處理過的新資料，並回到KDD流程頁面<br>
+                </small></p></blockquote>
+                <p>這個範例將資料進行缺值過濾、常態分佈離群值過濾處理，然後將sepal length及sepal width正規化（
+                    <a href="file/pre-processed.csv">下載</a> 檔案觀察資料變化，3.4 kB）。<br>
+                    處理後的檔案成功儲存後回會到KDD頁面,進行下一步特徵選擇</p>
                 <h4>
                     4.特徵選擇 Feature Selection
                 </h4>
