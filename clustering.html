@@ -61,7 +61,7 @@ layout: default
                 </p>
                 <h5>建立訓練資料</h5>
                 <p>
-                    將iris.data中的class欄位刪除，另存成csv檔作為訓練檔（範例訓練資料
+                    將iris.data中的class欄位刪除，另存成csv檔作為訓練檔（
                     <a href="file/iris-train-nolabel.csv">下載</a> 1.8 kB）
                 </p>
                 <h5>模型建立方法</h5>
@@ -74,14 +74,14 @@ layout: default
             <div class="col-lg-8 col-md-10 mx-auto">
                 <h2 class="section-heading">Step by Step</h2>
                 <hr>
-                <p>透過以下流程操作示範，可以建立Iris資料分群模型 [ 整個流程約5分鐘 ]</p>
+                <p>跟著以下流程操作示範，5步驟即可輕鬆建立Iris資料分群模型 [ 整個流程約5分鐘 ]</p>
                 <iframe width="560" height="315" align="middle" src="https://www.youtube.com/embed/zqKFH7WNmfE?rel=0"
                         frameborder="0" allowfullscreen ></iframe>
                 <h4>
-                    0.Create Project and Data Input
+                    1.建立專案 Create Project
                 </h4>
                 <img class="img-fluid" src="img/demo/intro/01_index.png" alt="">
-                <p>
+                <span class="caption text-muted">
                     InAnalysis User Dashboard <br>
                     1. 回到InAnalysis User Dashboard<br>
                     2. 進入Project Management, 可新增、修改、刪除Project<br>
@@ -91,22 +91,27 @@ layout: default
                     6. Number of Projects, 顯示使用者建立的Project數量<br>
                     7. 進入Project Management, 可新增、修改、刪除Project<br>
                     8. Number of API, 顯示使用者建立的API數量<br>
-                    9. 進入API Management, 可新增、修改、刪除API<br><br>
+                    9. 進入API Management, 可新增、修改、刪除API<br>
                     我們在這個頁面點選2.或是7.進入Project Management, 開始機器學習的流程
-                </p>
-                <p>建立Clustering專案</p>
-                <img class="img-fluid" src="img/demo/intro/02_project.png" alt="">
+                </span>
                 <p>
+                    我們在這個頁面點選2.或是7.進入Project Management, 開始機器學習的流程<br>
+                    建立Clustering專案
+                </p>
+                <img class="img-fluid" src="img/demo/intro/02_project.png" alt="">
+                <span class="caption text-muted">
                     Project Management <br>
                     1. 選擇Project Type, 四種Project Type有不同的任務<br>
                     2. 輸入Project的名稱<br>
                     3. 新增Project<br>
-                </p>
+                </span>
                 <img class="img-fluid" src="img/demo/clustering/project.png" alt="">
                 <span class="caption text-muted">成功新增Project後點選KDD, 開始機器學習的流程</span>
-                <p>檔案上傳</p>
+                <h4>
+                    2.檔案上傳 Data Input
+                </h4>
                 <img class="img-fluid" src="img/demo/clustering/03_KDD_upload.png" alt="">
-                <p>
+                <span class="caption text-muted">
                     KDD：Data Input<br>
                     1. 點選可看到KDD各個流程的詳細說明<br>
                     2. 提示欄，建議使用者下一個步驟可以做什麼<br>
@@ -114,10 +119,10 @@ layout: default
                     4. 選擇資料上傳的階段<br>
                     5. 從本機端選擇資料<br>
                     6. 點選進行資料上傳<br>
-                </p>
+                </span>
                 <img class="img-fluid" src="img/demo/clustering/04_KDD_preprocess.png" alt="">
                 <span class="caption text-muted">上傳完成會看到該資料的操作欄位</span>
-                <p>
+                <span class="caption text-muted">
                     Data Information<br>
                     1. 顯示上傳資料的檔案名稱<br>
                     2. 點選可看到該資料的操作紀錄說明<br>
@@ -127,11 +132,13 @@ layout: default
                     6. 點選按鈕可對該資料進行各項操作處理，綠色為系統建議的下一步操作<br>
                     7. 點選預覽整份資料<br>
                     8. 點選可下載資料<br>
-                    9. 點選會將該資料刪除<br><br>
+                    9. 點選會將該資料刪除<br>
+                </span>
+                <p>
                     我們點選7.Preview來預覽整份資料
                 </p>
                 <img class="img-fluid" src="img/demo/clustering/04_dataviewer.png" alt="">
-                <p>
+                <span class="caption text-muted">
                     Data Viewer<br>
                     1. 正在預覽的資料檔案名稱，與檔案所在的Server<br>
                     2. 顯示該資料的所有欄位名稱<br>
@@ -141,14 +148,13 @@ layout: default
                     6. 顯示該欄位的資料標準差，若為非數值型態則會顯示「-」<br>
                     7. 點選可看到該欄位的所有資料分佈直方圖<br>
                     8. 點選回到KDD流程<br>
-                </p>
+                </span>
                 <h4>
-                    1.Data Pre-process
+                    3.資料前處理 Data Pre-process
                 </h4>
                 <img class="img-fluid" src="img/demo/clustering/data_input.png" alt="">
                 <p>從Function欄位中, 選擇Data Pre-processing按鈕, 進行資料預處理(Pre-process)</p>
                 <img class="img-fluid" src="img/demo/clustering/preprocess_01.png" alt="">
-                <img class="img-fluid" src="img/demo/clustering/04_KDD_preprocess.png" alt="">
                 <p>選擇資料要進行哪些處理並預覽</p>
                 <img class="img-fluid" src="img/demo/clustering/05_preprocess-1.png" alt="">
                 <img class="img-fluid" src="img/demo/clustering/05_preprocess-2.png" alt="">
@@ -157,7 +163,7 @@ layout: default
                 <img class="img-fluid" src="img/demo/clustering/preprocess_03.png" alt="">
                 <span class="caption text-muted">Data Pre-process</span>
                 <h4>
-                    2.Feature Selection
+                    4.特徵選擇 Feature Selection
                 </h4>
                 <p>利用Pearson Correlation演算法計算各個Feature間的關係程度,以作為選擇Feature的參考</p>
                 <img class="img-fluid" src="img/demo/clustering/06_KDD_feature.png" alt="">
@@ -168,7 +174,7 @@ layout: default
                 <img class="img-fluid" src="img/demo/clustering/feature_03.png" alt="">
                 <span class="caption text-muted">Select Feature and Save</span>
                 <h4>
-                    3.Model Training
+                    5.模型訓練 Model Training
                 </h4>
                 <p>利用上傳的資料進行模型訓練</p>
                 <img class="img-fluid" src="img/demo/clustering/train_01.png" alt="">
