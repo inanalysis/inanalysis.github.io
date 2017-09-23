@@ -78,9 +78,10 @@ layout: default
                 <iframe width="560" height="315" align="middle" src="https://www.youtube.com/embed/zqKFH7WNmfE?rel=0"
                         frameborder="0" allowfullscreen ></iframe>
 
-                <h4 class="section-heading">
+                <h4>
                     1.建立專案 Create Project
                 </h4>
+                <p>建立Clustering Project以進行KDD流程訓練模型，並可將模型Export成API</p>
                 <img class="img-fluid" src="img/demo/intro/01_index.png" alt="">
                 <blockquote><p><small>
                     InAnalysis User Dashboard <br>
@@ -94,10 +95,7 @@ layout: default
                     8. Number of API, 顯示使用者建立的API數量<br>
                     9. 進入API Management, 可新增、修改、刪除API<br>
                 </small></p></blockquote>
-                <p>
-                    我們在這個頁面點選2.或是7.進入Project Management, 開始機器學習的流程<br>
-                    建立Clustering專案
-                </p>
+                <p>我們在這個頁面點選2.或是7.進入Project Management, 開始機器學習的流程</p>
                 <img class="img-fluid" src="img/demo/intro/02_project.png" alt="">
                 <blockquote><p><small>
                     Project Management <br>
@@ -105,12 +103,14 @@ layout: default
                     2. 輸入Project的名稱<br>
                     3. 新增Project<br>
                 </small></p></blockquote>
+                <p>建立Clustering專案</p>
                 <img class="img-fluid" src="img/demo/clustering/project.png" alt="">
                 <p>成功新增Project後點選KDD, 開始機器學習的流程</p>
 
                 <h4>
                     2.檔案上傳 Data Input
                 </h4>
+                <p>上傳csv資料檔案以進行KDD流程</p>
                 <img class="img-fluid" src="img/demo/clustering/03_KDD_upload.png" alt="">
                 <blockquote><p><small>
                     KDD：Data Input<br>
@@ -121,8 +121,8 @@ layout: default
                     5. 從本機端選擇資料<br>
                     6. 點選進行資料上傳<br>
                 </small></p></blockquote>
-                <img class="img-fluid" src="img/demo/clustering/04_KDD_preprocess.png" alt="">
                 <p>上傳完成會看到該資料的操作欄位</p>
+                <img class="img-fluid" src="img/demo/clustering/04_KDD_preprocess.png" alt="">
                 <blockquote><p><small>
                     Data Information<br>
                     1. 顯示上傳資料的檔案名稱<br>
@@ -152,9 +152,9 @@ layout: default
                 <h4>
                     3.資料前處理 Data Pre-process
                 </h4>
+                <p>這個步驟可對資料進行缺值過濾、常態分佈離群值過濾、正規化等預處理</p>
                 <img class="img-fluid" src="img/demo/clustering/data_input.png" alt="">
                 <p>從Function欄位中, 選擇Data Pre-processing按鈕, 開始進行資料預處理(Pre-process)</p>
-
                 <img class="img-fluid" src="img/demo/clustering/05_preprocess-1.png" alt="">
                 <blockquote><p><small>
                     Step 1<br>
@@ -183,21 +183,41 @@ layout: default
                 <p>這個範例將資料進行缺值過濾、常態分佈離群值過濾處理，然後將sepal length及sepal width正規化（
                     <a href="file/pre-processed.csv">下載</a> 檔案觀察資料變化，3.4 kB）。<br>
                     處理後的檔案成功儲存後回會到KDD頁面,進行下一步特徵選擇</p>
+
                 <h4>
                     4.特徵選擇 Feature Selection
                 </h4>
-                <p>利用Pearson Correlation演算法計算各個Feature間的關係程度,以作為選擇Feature的參考</p>
+                <p>這個步驟是利用Pearson Correlation演算法計算各個Feature間的關係程度,以作為選擇Feature的參考</p>
                 <img class="img-fluid" src="img/demo/clustering/06_KDD_feature.png" alt="">
-                <img class="img-fluid" src="img/demo/clustering/feature_01.png" alt="">
-                <span class="caption text-muted">Feature Selection</span>
-                <img class="img-fluid" src="img/demo/clustering/feature_02.png" alt="">
-                <span class="caption text-muted">Show Feature Weight Matrix</span>
-                <img class="img-fluid" src="img/demo/clustering/feature_03.png" alt="">
-                <span class="caption text-muted">Select Feature and Save</span>
+                <blockquote><p><small>
+                    KDD：Feature Selection<br>
+                    1. 提示欄，說明剛剛成功儲存了pre-processed過的檔案<br>
+                    2. pre-processed過的新檔案<br>
+                    3. 功能欄現在建議對該檔案進行Feature Selection的動作<br>
+                </small></p></blockquote>
+                <p>我們從功能欄點選Feature Selection，開始進行特徵選擇</p>
+                <img class="img-fluid" src="img/demo/clustering/07_feature.png" alt="">
+                <blockquote><p><small>
+                    Feature Selection<br>
+                    1. 正在進行特徵選擇的資料檔案名稱，與檔案所在的Server<br>
+                    2. 選擇計算特徵關係係數的演算法<br>
+                    3. 顯示該欄位的資料平均值<br>
+                    4. 顯示該欄位的資料標準差<br>
+                    5. 顯示該欄位的平均關係係數<br>
+                    6. 顯示該欄位對應其它欄位的關係係數<br>
+                    7. 選擇要留下來的特徵<br>
+                    8. 輸入新檔案名稱<br>
+                    9. 儲存新資料，並回到KDD流程頁面<br>
+                    10. 不儲存並回到KDD流程<br>
+                </small></p></blockquote>
+                <p>這個範例選擇sepal length, petal length, petal width 這三個特徵（
+                    <a href="file/pre-processed.csv">下載</a> 檔案觀察資料變化，2.0 kB）。<br>
+                    成功儲存後回會到KDD頁面,進行下一步模型訓練</p>
+                
                 <h4>
                     5.模型訓練 Model Training
                 </h4>
-                <p>利用上傳的資料進行模型訓練</p>
+                <p>這個步驟能夠選擇演算法對資料進行模型訓練，並預覽訓練出來的模型</p>
                 <img class="img-fluid" src="img/demo/clustering/train_01.png" alt="">
                 <span class="caption text-muted">Model Training</span>
                 <img class="img-fluid" src="img/demo/clustering/train_02.png" alt="">
