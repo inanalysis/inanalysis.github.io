@@ -637,10 +637,6 @@ pre code {
   width: 100%;
 }
 
-.container-yellow {
-  background-color: F6DB9D;
-}
-
 .row {
   display: -ms-flexbox;
   display: flex;

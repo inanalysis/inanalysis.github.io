@@ -21,9 +21,11 @@ layout: default
 
 <!-- Post Content -->
 <article>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
+                <h2 class="section-heading">Introduction</h2>
+                <hr>
                 <p>
                     有三大類異常檢測演算法。
                     在假設資料集中大多數例項都是正常的前提下，無監督異常檢測方法能通過尋找與其他資料最不符合的例項來檢測出未標記測試資料的異常。
@@ -31,66 +33,312 @@ layout: default
                     （與許多其他的統計分類問題的關鍵區別是異常檢測的內在不均衡性）。
                     半監督式異常檢測方法根據一個給定的正常訓練資料集建立一個表示正常行為的模型，然後檢測由學習模型生成的測試例項的可能性。
                 </p>
-                <h2 class="section-heading">機器學習畫布</h2>
-                <img class="img-fluid" src="img/demo/abnormal/canvas.jpg" alt="">
-                <span class="caption text-muted">
-                    <a href="https://goo.gl/Hek2N9">Machine Learning Canvas_Abnormal Detection</a>
-                </span>
-                <h5>Value Propositions</h5>
-                <p>由紅酒成份資料預測品質是否不在正常範圍</p>
-                <h5>Data Sources</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <h2 class="section-heading">Example</h2>
+                <hr>
+                <h5>欲解決的問題</h5>
+                <p>由iris的sepal(萼片)長寬和petal(花瓣)長寬將iris資料分群</p>
+                <img class="img-fluid" src="img/demo/clustering/iris.png" alt="">
+                <span class="caption text-muted">Iris sepal and petal</span>
+                <h5>資料欄位說明</h5>
+                <p>
+                    1. sepal (萼片) length in cm <br>
+                    2. sepal (萼片) width in cm <br>
+                    3. petal (花瓣) length in cm <br>
+                    4. petal (花瓣) width in cm <br>
+                    5. class: <br>
+                    -- Iris Setosa <br>
+                    -- Iris Versicolour <br>
+                    -- Iris Virginica <br>
+                </p>
+                <h5>資料來源</h5>
                 <p>UC Irvine Machine Learning Repository:
-                    <a href="https://archive.ics.uci.edu/ml/datasets/wine+quality">Wine Quality Data Set</a>
+                    <a href="http://archive.ics.uci.edu/ml/datasets/Iris?ref=datanews.io">Iris Data Set</a>
                 </p>
-                <h5>Collecting Data</h5>
-                <p>先將quality介於4-8之間的資料設為正常,其餘的資料設為異常,從正常資料中取出80%作為訓練檔,剩下的20%與異常資料合併成測試檔</p>
-                <h5>Features</h5>
-                <p> 紅酒資料欄位說明：<br>
-                    1 - fixed acidity 固定酸度<br>
-                    2 - volatile acidity 揮發酸度<br>
-                    3 - citric acid 檸檬酸<br>
-                    4 - residual sugar 餘糖<br>
-                    5 - chlorides 氯化物<br>
-                    6 - free sulfur dioxide 自由基二氧化硫<br>
-                    7 - total sulfur dioxide 總二氧化硫<br>
-                    8 - density 密度<br>
-                    9 - pH 酸鹼度<br>
-                    10 - sulphates 硫酸鹽<br>
-                    11 - alcohol 酒精濃度<br>
+                <h5>建立訓練資料</h5>
+                <p>
+                    將iris.data中的class欄位刪除，另存成csv檔作為訓練檔（
+                    <a href="file/iris-train-nolabel.csv">下載</a> 1.8 kB ）
                 </p>
-                <h5>Building Models</h5>
-                <p>利用品質正常的紅酒成份資料作為訓練檔,用One-Class SVM演算法建立預測模型</p>
-                <h2 class="section-heading">模型訓練流程</h2>
+                <h5>模型建立方法</h5>
+                <p>用kmeans演算法建立預測模型</p>
+                <h5>模型結果預覽</h5>
+                <img class="img-fluid" src="img/demo/clustering/iris_clustering.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <h2 class="section-heading">Step by Step</h2>
+                <hr>
+                <p>跟著以下流程操作示範，即可輕鬆建立Iris資料分群模型 [ 整個流程約5分鐘 ]</p>
                 <h4>
-                    0.Data Input
+                    1.建立專案 Create Project
                 </h4>
-                <p>檔案上傳</p>
-                <img class="img-fluid" src="img/demo/abnormal/data_input.png" alt="">
-                <span class="caption text-muted">Data Upload： Select Process Stage</span>
-                <img class="img-fluid" src="img/demo/abnormal/data_input2.png" alt="">
-                <span class="caption text-muted">Data Upload： Select Function</span>
+                <p>建立Clustering Project以進行KDD流程訓練模型，並可將模型Export成API</p>
+                <img class="img-fluid" src="img/demo/intro/01_index.png" alt="">
+                <blockquote><p><small>
+                    InAnalysis User Dashboard <br>
+                    1. 回到InAnalysis User Dashboard<br>
+                    2. 進入Project Management, 可新增、修改、刪除Project<br>
+                    3. 進入API Management, 可新增、修改、刪除API<br>
+                    4. Documentation, 教學網站連結與範例資料檔案<br>
+                    5. Machine Learning Server Situation, 顯示Server是否正常啟動<br>
+                    6. Number of Projects, 顯示使用者建立的Project數量<br>
+                    7. 進入Project Management, 可新增、修改、刪除Project<br>
+                    8. Number of API, 顯示使用者建立的API數量<br>
+                    9. 進入API Management, 可新增、修改、刪除API<br>
+                </small></p></blockquote>
+                <p>我們在這個頁面點選2.或是7.進入Project Management, 開始機器學習的流程</p>
+                <img class="img-fluid" src="img/demo/intro/02_project.png" alt="">
+                <blockquote><p><small>
+                    Project Management <br>
+                    1. 選擇Project Type, 四種Project Type有不同的任務<br>
+                    2. 輸入Project的名稱<br>
+                    3. 新增Project<br>
+                </small></p></blockquote>
+                <p>建立Clustering專案</p>
+                <img class="img-fluid" src="img/demo/clustering/project.png" alt="">
+                <p>成功新增Project後點選KDD, 開始機器學習的流程</p>
+
                 <h4>
-                    1.Data Pre-process
+                    2.檔案上傳 Data Input
                 </h4>
-                <p>從Function欄位中, 選擇Data Pre-processing按鈕, 可進行資料預處理(Pre-process)</p>
-                <img class="img-fluid" src="img/demo/abnormal/data_step1.png" alt="">
-                <span class="caption text-muted">Data Pre-view</span>
+                <p>上傳csv資料檔案以進行KDD流程</p>
+                <img class="img-fluid" src="img/demo/clustering/03_KDD_upload.png" alt="">
+                <blockquote><p><small>
+                    KDD：Data Input<br>
+                    1. 點選可看到KDD各個流程的詳細說明<br>
+                    2. 提示欄，建議使用者下一個步驟可以做什麼<br>
+                    3. Model Management，這個Project訓練出來的所有模型可在這邊瀏覽，修改資訊或Export成API<br>
+                    4. 選擇資料上傳的階段<br>
+                    5. 從本機端選擇資料<br>
+                    6. 點選進行資料上傳<br>
+                    7. 顯示Server是否正常啟動<br>
+                </small></p></blockquote>
+                <p>上傳完成會看到該資料的操作欄位</p>
+                <img class="img-fluid" src="img/demo/clustering/04_KDD_preprocess.png" alt="">
+                <blockquote><p><small>
+                    Data Information<br>
+                    1. 顯示上傳資料的檔案名稱<br>
+                    2. 點選可看到該資料的操作紀錄說明<br>
+                    3. 顯示該資料所在的Server<br>
+                    4. 顯示資料欄位數量<br>
+                    5. 顯示該資料被設為標籤的欄位名稱，若該資料無標籤則顯示「No Label」<br>
+                    6. 點選按鈕可對該資料進行各項操作處理，綠色為系統建議的下一步操作<br>
+                    7. 點選預覽整份資料<br>
+                    8. 點選可下載資料<br>
+                    9. 點選會將該資料刪除<br>
+                </small></p></blockquote>
+                <p>我們點選7.Preview來預覽整份資料</p>
+                <img class="img-fluid" src="img/demo/clustering/04_dataviewer.png" alt="">
+                <blockquote><p><small>
+                    Data Viewer<br>
+                    1. 正在預覽的資料檔案名稱，與檔案所在的Server<br>
+                    2. 顯示該資料的所有欄位名稱<br>
+                    3. 顯示該欄位的第一項資料<br>
+                    4. 顯示該欄位的資料型態<br>
+                    5. 顯示該欄位的資料平均值，若為非數值型態則會顯示「-」<br>
+                    6. 顯示該欄位的資料標準差，若為非數值型態則會顯示「-」<br>
+                    7. 點選可看到該欄位的所有資料分佈直方圖<br>
+                    8. 點選回到KDD流程<br>
+                </small></p></blockquote>
+
                 <h4>
-                    2.Feature Selection
+                    3.資料前處理 Data Pre-process
                 </h4>
-                <p>利用Pearson Correlation演算法計算各個Feature間的關係程度,以作為選擇Feature的參考</p>
-                <img class="img-fluid" src="img/demo/abnormal/Feature_2.png" alt="">
-                <span class="caption text-muted">Calculate Pearson Correlation</span>
-                <img class="img-fluid" src="img/demo/abnormal/Feature_3.png" alt="">
-                <span class="caption text-muted">Show Feature Weight Matrix</span>
-                <img class="img-fluid" src="img/demo/abnormal/Feature_4.png" alt="">
-                <span class="caption text-muted">Select Feature and Save</span>
+                <p>這個步驟可對資料進行缺值過濾、常態分佈離群值過濾、正規化等預處理</p>
+                <img class="img-fluid" src="img/demo/clustering/data_input.png" alt="">
+                <p>從Function欄位中, 選擇Data Pre-processing按鈕, 開始進行資料預處理(Pre-process)</p>
+                <img class="img-fluid" src="img/demo/clustering/05_preprocess-1.png" alt="">
+                <blockquote><p><small>
+                    Step 1<br>
+                    1. 正在處理的資料檔案名稱，與檔案所在的Server<br>
+                    2. 選擇欄位<br>
+                    3. 預覽該欄位的資料分佈直方圖<br>
+                    4. 取消回到KDD流程頁面<br>
+                </small></p></blockquote>
+                <img class="img-fluid" src="img/demo/clustering/05_preprocess-2.png" alt="">
+                <blockquote><p><small>
+                    Step 2<br>
+                    1. 對資料進行缺值過濾，如果該列資料有NAN則會刪除該列資料，這個步驟能夠確保訓練時不會因為資料不齊全而出現錯誤<br>
+                    2. 對該欄位資料進行利用常態分佈離群值過濾，1 std表示將過慮掉1個標準差以外的離群資料，0 std表示不對資料做離群值過濾<br>
+                    3. 執行上述處理並預覽該欄位處理過後的資料分佈直方圖<br>
+                    4. 取消處理動作回到Step 1選擇欄位<br>
+                </small></p></blockquote>
+                <img class="img-fluid" src="img/demo/clustering/05_preprocess-3.png" alt="">
+                <blockquote><p><small>
+                    Step 3<br>
+                    1. 選擇Normalize的演算法<br>
+                    2. 選擇欲進行Normalize的資料欄位，進行Normalize能夠將資料Scale到相同的range<br>
+                    3. 輸入處理過資料的新檔案名稱<br>
+                    4. 儲存處理過的新資料，並回到KDD流程頁面
+                    5. 取消處理動作，不儲存處理過的新資料，並回到KDD流程頁面<br>
+                </small></p></blockquote>
+                <p>這個範例將資料進行正規化，然後將Pregnant_times缺值過濾、常態分佈離群值過濾處理。
+                    處理後的檔案成功儲存後回會到KDD頁面,進行下一步特徵選擇</p>
+
+                <h4>
+                    4.特徵選擇 Feature Selection
+                </h4>
+                <p>這個步驟是利用Pearson Correlation演算法計算各個Feature間的關係程度,以作為選擇Feature的參考</p>
+                <img class="img-fluid" src="img/demo/clustering/06_KDD_feature.png" alt="">
+                <blockquote><p><small>
+                    KDD：Feature Selection<br>
+                    1. 提示欄，說明剛剛成功儲存了pre-processed過的檔案<br>
+                    2. pre-processed過的新檔案<br>
+                    3. 功能欄現在建議對該檔案進行Feature Selection的動作<br>
+                </small></p></blockquote>
+                <p>我們從功能欄點選Feature Selection，開始進行特徵選擇</p>
+                <img class="img-fluid" src="img/demo/clustering/07_feature.png" alt="">
+                <blockquote><p><small>
+                    Feature Selection<br>
+                    1. 正在進行特徵選擇的資料檔案名稱，與檔案所在的Server<br>
+                    2. 選擇計算特徵關係係數的演算法<br>
+                    3. 顯示該欄位的資料平均值<br>
+                    4. 顯示該欄位的資料標準差<br>
+                    5. 顯示該欄位的平均關係係數<br>
+                    6. 顯示該欄位對應其它欄位的關係係數<br>
+                    7. 選擇要留下來的特徵<br>
+                    8. 輸入新檔案名稱<br>
+                    9. 儲存新資料，並回到KDD流程頁面<br>
+                    10. 不儲存並回到KDD流程<br>
+                </small></p></blockquote>
+                <p>此步驟可製作多個待train模型(選取不同features)（
+                    <a href="file/pre-processed.csv">下載</a> 檔案觀察資料變化，2.0 kB）。<br>
+                    成功儲存後回會到KDD頁面,進行下一步模型訓練</p>
+
+                <h4>
+                    5.模型訓練 Model Training
+                </h4>
+                <p>這個步驟能夠選擇演算法對資料進行模型訓練，並預覽訓練出來的模型</p>
+                <img class="img-fluid" src="img/demo/clustering/train_01.png" alt="">
+                <span class="caption text-muted">選擇Model Training的功能</span>
+                <img class="img-fluid" src="img/demo/clustering/08_model-1.png" alt="">
+                <blockquote><p><small>
+                    Model Training<br>
+                    1. 正在進行模型訓練的資料檔案名稱，與檔案所在的Server<br>
+                    2. 選擇模型訓練的演算法<br>
+                    3. 設定演算法參數，或直接使用預設值<br>
+                    4. 輸入模型名稱<br>
+                    5. 進行模型訓練<br>
+                    6. 回到KDD流程<br>
+                </small></p></blockquote>
+                <img class="img-fluid" src="img/demo/clustering/08_model-2.png" alt="">
+                <blockquote><p><small>
+                    Model Preview<br>
+                    1. 選擇兩個資料欄位<br>
+                    2. 顯示訓練好的模型圖<br>
+                </small></p></blockquote>
+                <p>訓練出來的模型可以在Model Management頁面管理</p>
+                <img class="img-fluid" src="img/demo/clustering/08_model_management.png" alt="">
+                <img class="img-fluid" src="img/demo/clustering/08_model_management-1.png" alt="">
+                <blockquote><p><small>
+                    Model Management<br>
+                    1. 模型名稱<br>
+                    2. 模型訓練使用的演算法<br>
+                    3. 訓練使用的檔案及參數<br>
+                    4. 將模型匯出成API<br>
+                    5. 修改模型資料<br>
+                    6. 刪除模型<br>
+                </small></p></blockquote>
+                <h4>
+                    6.模型預測 Model Prediction
+                </h4>
+                <p>
+                    這個步驟能夠利用已經訓練好的模型對新的資料進行預測，並顯示預測分類的結果及準確度
+                </p>
+                <img class="img-fluid" src="img/demo/classification/09-predict-0.png" alt="">
+                <img class="img-fluid" src="img/demo/classification/09-predict-0-label.png" alt="">
+                <img class="img-fluid" src="img/demo/classification/09-predict-1-kdd.png" alt="">
+                <img class="img-fluid" src="img/demo/classification/09-predict-2.png" alt="">
+                <blockquote><p><small>
+                    Select Model to Predict<br>
+                    1. 模型名稱<br>
+                    2. 模型訓練使用的演算法<br>
+                    3. 訓練使用的檔案及參數<br>
+                    4. 勾選一個模型來進行預測<br>
+                    5. 進行預測<br>
+                    6. 取消回到KDD流程<br>
+                </small></p></blockquote>
+                <img class="img-fluid" src="img/demo/classification/09-predict-3.png" alt="">
+                <blockquote><p><small>
+                    Prediction Result<br><br>
+                    [ Classification Report ] 公式說明參考<a href="https://blog.argcv.com/articles/1036.c">連結</a><br>
+                    1. 類別名稱<br>
+                    2. precision:精確率的公式是P=TP/(TP+FP),計算的是所有"正確預測的物件(TP)"占所有"預測成這個類別的物件(TP+FP)"的比例.<br>
+                    3. recall:召回率的公式是R=TP/(TP+FN),計算的是所有"正確預測的物件(TP)"占所有"應該被預測到的物件(TP+FN)"的比例。<br>
+                    4. f1-score:F1值就是精確率和召回率的調和均值,也就是F1=2*TP/(2*TP+FP+FN)<br>
+                    5. support:這個類別被預測到的數量<br>
+                    6. 所有類別的平均預測表現<br>
+                    [ Confusion Matrix ]<br>
+                    7. 模型預測出來的標籤<br>
+                    8. 使用者給定的正確標籤<br>
+                    * 綠色圈起來斜對角的部份代表"正確預測的數量"<br>
+                    * 其餘的部份是預測錯誤，例如圖中的紅色圈圈代表有一筆資料被預測成Iris-versicolor這個類別，但實際上應該是Iris-verginica
+                </small></p></blockquote>
+
+                <h4>
+                    7.建立API Export API
+                </h4>
+                <p>這個步驟能夠將訓練好的模型建立成API，以利更多的應用</p>
+                <img class="img-fluid" src="img/demo/clustering/09_0exportAPI.png" alt="">
+                <span class="caption text-muted">選擇Export API的功能</span>
+                <img class="img-fluid" src="img/demo/clustering/09_1setAPI.png" alt="">
+                <blockquote><p><small>
+                    Set API Input<br>
+                    1. 輸入API的名稱，以及API功能描述<br>
+                    2. 輸入自訂的API Input Key<br>
+                    3. 輸入API Input描述<br>
+                </small></p></blockquote>
+                <img class="img-fluid" src="img/demo/clustering/09_1setAPI-1.png" alt="">
+                <blockquote><p><small>
+                    Set API Output<br>
+                    1. 輸入自訂的API Output Key<br>
+                    2. 輸入API Output描述<br>
+                    3. 儲存並建立API<br>
+                    4. 不儲存回到Model Management<br>
+                </small></p></blockquote>
+                <p>建立API後，會顯示API呼叫URL以及API輸入輸出的json格式</p>
+                <img class="img-fluid" src="img/demo/clustering/09_2showAPI.png" alt="">
+                <blockquote><p><small>
+                    Show API Format<br>
+                    1. API的名稱<br>
+                    2. API的呼叫路徑<br>
+                    3. API Input格式<br>
+                    4. API Output格式<br>
+                </small></p></blockquote>
+                <p>點選上方功能列的API ，可以檢視全部建立好的API</p>
+                <img class="img-fluid" src="img/demo/clustering/09_3API_manegement.png" alt="">
+                <blockquote><p><small>
+                    Model Training<br>
+                    1. 輸入API的名稱<br>
+                    2. API功能描述<br>
+                    3. API建立資訊<br>
+                    4. 編輯API<br>
+                    5. 刪除API<br>
+                </small></p></blockquote>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <h2 class="section-heading">Machine Learning Canvas機器學習畫布</h2>
+                <hr>
+                <p>Machine Learning Canvas(機器學習畫布)的框架分為4個部分：問題定義、模型預測、模型學習和系統評估，
+                    這個畫布能夠幫助機器學習團隊釐清開發應用時所會面臨的問題</p>
+                <iframe width="560" height="315" align="middle" src="https://www.youtube.com/embed/Qpo5XzlUrwE?rel=0"
+                        frameborder="0" allowfullscreen></iframe>
+                <img class="img-fluid" src="img/demo/clustering/canvas.jpg" alt="">
+                <p>
+                    Machine Learning Canvas_空白畫布可由此<a href="https://goo.gl/Hek2N9">下載</a>
+                </p>
                 <hr>
                 <button type="button" class="btn btn-primary btn-lg btn-block"
                         onclick="window.open('http://ntuesoe.com:8008','_blank')">
                     立即試用！
                 </button>
-
             </div>
         </div>
     </div>
