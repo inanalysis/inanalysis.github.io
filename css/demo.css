@@ -1,10 +1,6 @@
 @import url('normalize.css');
 
 /* General Demo Style */
-.container{
-	width: 100%;
-	position: relative;
-}
 .clr{
 	clear: both;
 	padding: 0;
