@@ -10,6 +10,10 @@ layout: review_layout
                 <a href="review_index.html" class="btn btn-info btn-lg">
                     <span class="glyphicon glyphicon-menu-left"></span>Back to User Reviews List
                 </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
                 <section class="main">
                     <ul class="ch-grid">
                         <li><a href="review_3.html">
@@ -51,6 +55,9 @@ layout: review_layout
                 <p>
                     在房屋價格的預測上，可以看到預測結果的MSE算出來大約為1.26E13，我認為這個結果不算理想，而在我調整的其他model上，我將例如sqft_lot這個特徵值先做normalize，而預測出來的誤差值會變高到1.3E14，並沒有比較好，而我也有嘗試將不同的值去做前處理，像是將特徵值數值範圍較大的特徵都進行normalize，但結果反而會變差，MSE甚至會高到1.6E15，相信可能在這些特徵值上，數值的高低落差都具有一定的參考性，若我們將數值給打平反而預測出來的結果會較差。
                     在房價的預測中，有些特徵值例如是經緯度，可能不見得跟價格呈現線性的關係，有可能是較相近的值會有差不多的價格表現，在這些特徵值中，相信我們需要做細膩的前處理，又或者像是用XGB的方法去做，可以得到更好的預測結果。</p>
+                <a href="review_index.html" class="btn btn-info btn-lg">
+                    <span class="glyphicon glyphicon-menu-left"></span>Back to User Reviews List
+                </a>
             </div>
         </div>
     </div>
