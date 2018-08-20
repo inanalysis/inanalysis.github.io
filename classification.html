@@ -9,10 +9,17 @@ layout: default
             <div class="col-lg-8 col-md-10 mx-auto">
                 <div class="post-heading">
                     <h1>Classification</h1>
-                    <h2 class="subheading">分類（Classification）藉由給定類別的資料訓練出一個模型，當輸入新的資料X，能夠由訓練好的模型獲得一個Y，代表X屬於何種類別。</h2>
+                    <h2 class="subheading">
+                        分類是藉由給定類別的資料訓練出一個模型，當輸入新的資料X，能夠由訓練好的模型獲得一個Y，代表X屬於何種類別。<br>
+                        Classification is the problem of identifying to which of a set of categories (sub-populations) a
+                        new
+                        observation belongs, on the basis of a training set of data containing observations (or
+                        instances)
+                        whose category membership is known.
+                    </h2>
                     <span class="meta">Posted by
                 <a href="#">InAnalysis</a>
-                on August 23, 2017</span>
+                on August 20, 2018</span>
                 </div>
             </div>
         </div>
@@ -30,17 +37,28 @@ layout: default
                     分類是根據已知樣本的某些特徵，判斷一個新的樣本屬於哪種已知的樣本類。分類問題也被稱為監督式學習
                     (supervised classification)，根據已知訓練區提供的樣本，通過計算選擇特徵參數，建立判別函數以對樣本進行的分類。
                 </p>
+                <p>
+                    Classification is an instance of supervised learning which is done based on certain characteristics
+                    of
+                    a known sample to determine which known sample class a new sample belongs to. Based on the
+                    samples provided in the known training area, the selection of feature parameters is calculated and a
+                    discriminant function is established to classify the samples.
+                </p>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <h2 class="section-heading">Example</h2>
                 <hr>
-                <h5>欲解決的問題</h5>
-                <p>由iris的sepal(萼片)長寬和petal(花瓣)長寬來分類iris的種類</p>
+                <h5>欲解決的問題 Problem to be solved:</h5>
+                <p>
+                    由iris的sepal(萼片)長寬和petal(花瓣)長寬來分類iris的種類<br>
+                    The type of iris is classified by iris's sepal length and width and petal's
+                    length and width.
+                </p>
                 <img class="img-fluid" src="img/demo/clustering/iris.png" alt="">
                 <span class="caption text-muted">Iris sepal and petal</span>
-                <h5>資料欄位說明</h5>
+                <h5>資料欄位說明 Data field description:</h5>
                 <p>
                     1. sepal (萼片) length in cm <br>
                     2. sepal (萼片) width in cm <br>
@@ -51,23 +69,26 @@ layout: default
                     -- Iris Versicolour <br>
                     -- Iris Virginica <br>
                 </p>
-                <h5>資料來源</h5>
+                <h5>資料來源 Source:</h5>
                 <p>UC Irvine Machine Learning Repository:
                     <a href="http://archive.ics.uci.edu/ml/datasets/Iris?ref=datanews.io">Iris Data Set</a>
                 </p>
-                <h5>建立訓練資料</h5>
+                <h5>建立訓練資料 Training Dataset:</h5>
                 <p>
-                    下載iris-train.csv作為訓練檔（
-                    <a href="file/iris-train.csv">下載</a> 2.2 kB ）
+                    下載iris-train.csv作為訓練檔（<a href="file/iris-train.csv">下載</a> 2.2 kB ）<br>
+                    Download iris-train.csv as a training file (<a href="file/iris-train.csv">Download</a> 2.2 kB)
                 </p>
-                <h5>建立測試資料</h5>
+                <h5>建立測試資料 Test Dataset:</h5>
                 <p>
-                    下載iris-test.csv作為測試檔（
-                    <a href="file/iris-test.csv">下載</a> 0.6 kB ）
+                    下載iris-test.csv作為測試檔（<a href="file/iris-test.csv">下載</a> 0.6 kB ）<br>
+                    Download iris-test.csv as a test file (<a href="file/iris-train.csv">Download</a> 0.6 kB)
                 </p>
-                <h5>模型建立方法</h5>
-                <p>用knn演算法建立預測模型</p>
-                <h5>模型結果預覽</h5>
+                <h5>模型建立方法 Build Predictive Model:</h5>
+                <p>
+                    用knn演算法建立預測模型<br>
+                    Using knn algorithm to establish prediction model
+                </p>
+                <h5>模型結果預覽 Model Results Preview:</h5>
                 <img class="img-fluid" src="img/demo/clustering/iris_clustering.png" alt="">
             </div>
         </div>
@@ -75,263 +96,469 @@ layout: default
             <div class="col-lg-8 col-md-10 mx-auto">
                 <h2 class="section-heading">Step by Step</h2>
                 <hr>
-                <p>跟著以下流程操作示範，即可輕鬆建立Iris資料分類模型 [ 整個流程約5分鐘 ]</p>
+                <p>
+                    跟著以下流程操作示範，即可輕鬆建立Iris資料分類模型 [ 整個流程約5分鐘 ]<br>
+                    Following the following process demonstration, you can easily create Iris data classification model
+                    [about 5 minutes for the entire process]
+                </p>
                 <h4>
                     1.建立專案 Create Project
                 </h4>
-                <p>建立Classification Project以進行KDD流程訓練模型，並可將模型Export成API</p>
+                <p>
+                    建立Classification Project以進行KDD流程訓練模型，並可將模型Export成API<br>
+                    Establish Classification Project for KDD process training model and export the model into API
+                </p>
                 <img class="img-fluid" src="img/demo/intro/01_index.png" alt="">
-                <blockquote><p><small>
-                    InAnalysis User Dashboard <br>
-                    1. 回到InAnalysis User Dashboard<br>
-                    2. 進入Project Management, 可新增、修改、刪除Project<br>
-                    3. 進入API Management, 可新增、修改、刪除API<br>
-                    4. Documentation, 教學網站連結與範例資料檔案<br>
-                    5. Machine Learning Server Situation, 顯示Server是否正常啟動<br>
-                    6. Number of Projects, 顯示使用者建立的Project數量<br>
-                    7. 進入Project Management, 可新增、修改、刪除Project<br>
-                    8. Number of API, 顯示使用者建立的API數量<br>
-                    9. 進入API Management, 可新增、修改、刪除API<br>
-                </small></p></blockquote>
-                <p>我們在這個頁面點選2.或是7.進入Project Management, 開始機器學習的流程</p>
+                <blockquote>
+                    <p>
+                        <small>
+                            InAnalysis User Dashboard <br>
+                            1. 回到InAnalysis User Dashboard （InAnalysis to go back to User Dashboard）<br>
+                            2. 進入Project Management, 可新增、修改、刪除Project （Project Management to add, modify or delete
+                            Project）<br>
+                            3. 進入API Management, 可新增、修改、刪除API （API Management to add, modify or delete API）<br>
+                            4. Documentation, 教學網站連結與範例資料檔案 （Documentation to display website tutorial and sample data
+                            file）<br>
+                            5. Machine Learning Server Situation, 顯示Server是否正常啟動 （Machine Learning Server Status to
+                            display which server is being used）<br>
+                            6. Number of Projects, 顯示使用者建立的Project數量 （Total Projects to display number of Projects
+                            created by the user.）<br>
+                            7. 進入Project Management, 可新增、修改、刪除Project （Project Management to add, modify or delete
+                            Project）<br>
+                            8. Number of API, 顯示使用者建立的API數量 （Total API to display number of APIs created by users）<br>
+                            9. 進入API Management, 可新增、修改、刪除API （API Management to add, modify, delete API）<br>
+                        </small>
+                    </p>
+                </blockquote>
+                <p>
+                    我們在這個頁面點選2.或是7.進入Project Management, 開始機器學習的流程<br>
+                    We click on this page 2. or 7. Enter Project Management to start the machine learning process
+                </p>
                 <img class="img-fluid" src="img/demo/classification/01_project.png" alt="">
-                <blockquote><p><small>
-                    Project Management <br>
-                    1. 選擇Project Type, 四種Project Type有不同的任務<br>
-                    2. 輸入Project的名稱<br>
-                    3. 新增Project<br>
-                </small></p></blockquote>
-                <p>建立Classification專案</p>
+                <blockquote>
+                    <p>
+                        <small>
+                            Project Management <br>
+                            1. 選擇Project Type, 四種Project Type有不同的任務 (Select Project Type out of the four available tasks
+                            based on your requirement)<br>
+                            2. 輸入Project的名稱 (Enter Project Name)<br>
+                            3. 新增Project (Click Create Project)<br>
+                        </small>
+                    </p>
+                </blockquote>
+                <p>建立分類專案 Create a Classification project</p>
                 <img class="img-fluid" src="img/demo/classification/02_KDD.png" alt="">
-                <p>成功新增Project後點選KDD, 開始機器學習的流程</p>
+                <p>
+                    成功新增Project後點選KDD, 開始機器學習的流程<br>
+                    Click KDD after successfully adding Project to start the machine learning process
+                </p>
 
                 <h4>
                     2.檔案上傳 Data Input
                 </h4>
-                <p>上傳csv資料檔案以進行KDD流程</p>
+                <p>
+                    上傳csv資料檔案以進行KDD流程<br>
+                    Upload .csv data file for KDD process
+                </p>
                 <img class="img-fluid" src="img/demo/classification/03_KDD_upload.png" alt="">
-                <blockquote><p><small>
-                    KDD：Data Input<br>
-                    1. 點選可看到KDD各個流程的詳細說明<br>
-                    2. 提示欄，建議使用者下一個步驟可以做什麼<br>
-                    3. Model Management，這個Project訓練出來的所有模型可在這邊瀏覽，修改資訊或Export成API<br>
-                    4. 選擇資料上傳的階段<br>
-                    5. 從本機端選擇資料<br>
-                    6. 點選進行資料上傳<br>
-                </small></p></blockquote>
+                <blockquote>
+                    <p>
+                        <small>
+                            KDD：Data Input<br>
+                            1. 點選可看到KDD各個流程的詳細說明 (Click to see the detailed description of each process of KDD)<br>
+                            2. 提示欄，建議使用者下一個步驟可以做什麼 (Prompt bar, suggest the user can do the next step)<br>
+                            3. Model Management，這個Project訓練出來的所有模型可在這邊瀏覽，修改資訊或Export成API (Model Management, all models
+                            trained by this Project can be browsed here, modify
+                            Information or Export into API)<br>
+                            4. 選擇資料上傳的階段 (Select the stage for uploading data)<br>
+                            5. 從本機端選擇資料 (Select data from the local computer)<br>
+                            6. 點選進行資料上傳 (Click to upload data)<br>
+                            7. 顯示Server是否正常啟動 (Display whether the server starts normally)<br>
+                    </p>
+                </blockquote>
                 <img class="img-fluid" src="img/demo/classification/03_KDD_upload-label.png" alt="">
-                <blockquote><p><small>
-                    KDD：Data Input - select label column<br>
-                    1. 選擇作為標記的資料（Classification可以作為標記的資料類型為：整數、浮點數、字串）<br>
-                    2. 儲存檔案<br>
-                </small></p></blockquote>
-                <p>上傳完成會看到該資料的操作欄位</p>
+                <blockquote>
+                    <p>
+                        <small>
+                            KDD：Data Input - select label column<br>
+                            1. 選擇作為標記的資料（Classification可以作為標記的資料類型為：整數、浮點數、字串）(Select the data to be marked
+                            (Classification can be used as a marker data type:
+                            integer, floating point, string))<br>
+                            2. 儲存檔案(Save the file)<br>
+                        </small>
+                    </p>
+                </blockquote>
+                <p>
+                    上傳完成會看到該資料的操作欄位<br>
+                    Upload complete will see the operation of the data field
+                </p>
                 <img class="img-fluid" src="img/demo/classification/04_KDD_preprocess.png" alt="">
-                <blockquote><p><small>
-                    Data Information<br>
-                    1. 顯示上傳資料的檔案名稱<br>
-                    2. 點選可看到該資料的操作紀錄說明<br>
-                    3. 顯示該資料所在的Server<br>
-                    4. 顯示資料欄位數量<br>
-                    5. 顯示該資料被設為標籤的欄位名稱，若該資料無標籤則顯示「No Label」<br>
-                    6. 點選按鈕可對該資料進行各項操作處理，綠色為系統建議的下一步操作<br>
-                    7. 點選預覽整份資料<br>
-                    8. 點選可下載資料<br>
-                    9. 點選會將該資料刪除<br>
-                </small></p></blockquote>
-                <p>我們點選7.Preview來預覽整份資料</p>
+                <blockquote>
+                    <p>
+                        <small>
+                            Data Information<br>
+                            1. 顯示上傳資料的檔案名稱 (Display the file name of the uploaded data)<br>
+                            2. 點選可看到該資料的操作紀錄說明 (Click to see the operation record done for the data)<br>
+                            3. 顯示該資料所在的Server (Display the server where the data is located)<br>
+                            4. 顯示資料欄位數量 (Display the data field number)<br>
+                            5. 顯示該資料被設為標籤的欄位名稱，若該資料無標籤則顯示「No Label」(Display the field where the data is set as the label
+                            Name, if there is no label in the
+                            data, "No Label" will be displayed)<br>
+                            6. 點選按鈕可對該資料進行各項操作處理，綠色為系統建議的下一步操作 (Click the button to perform various operations on the
+                            data. Green color suggests the
+                            next step that should be taken.)<br>
+                            7. 點選預覽整份資料 (Click to preview the entire data)<br>
+                            8. 點選可下載資料 (Click to download Data)<br>
+                            9. 點選會將該資料刪除 (Click to delete the data)<br>
+                        </small>
+                    </p>
+                </blockquote>
+                <p>
+                    我們點選7.Preview來預覽整份資料 <br>
+                    We click on 7.Preview to preview the entire data
+                </p>
                 <img class="img-fluid" src="img/demo/classification/04_dataviewer.png" alt="">
-                <blockquote><p><small>
-                    Data Viewer<br>
-                    1. 正在預覽的資料檔案名稱，與檔案所在的Server<br>
-                    2. 顯示該資料的所有欄位名稱<br>
-                    3. 顯示該欄位的第一項資料<br>
-                    4. 顯示該欄位的資料型態<br>
-                    5. 顯示該欄位的資料平均值，若為非數值型態則會顯示「-」<br>
-                    6. 顯示該欄位的資料標準差，若為非數值型態則會顯示「-」<br>
-                    7. 點選可看到該欄位的所有資料分佈直方圖<br>
-                    8. 點選回到KDD流程<br>
-                </small></p></blockquote>
+                <blockquote>
+                    <p>
+                        <small>
+                            Data Viewer<br>
+                            1. 正在預覽的資料檔案名稱，與檔案所在的Server (The name of the data file being previewed, and the server where
+                            the file is located)<br>
+                            2. 顯示該資料的所有欄位名稱 (Show all field names of the data)<br>
+                            3. 顯示該欄位的第一項資料 (Display the first data of this field)<br>
+                            4. 顯示該欄位的資料型態 (Display the data type of this field)<br>
+                            5. 顯示該欄位的資料平均值，若為非數值型態則會顯示「-」(Display The average value of the data in this field, if it is
+                            a non-numeric type, it will
+                            show "-")<br>
+                            6. 顯示該欄位的資料標準差，若為非數值型態則會顯示「-」 (The standard deviation of data in this field will be
+                            displayed. If it is a non-numeric
+                            type, "-" will be displayed)<br>
+                            7. 點選可看到該欄位的所有資料分佈直方圖 (Click to see All data distribution histogram for this field)<br>
+                            8. 點選回到KDD流程 (Click to return to KDD process)<br>
+                        </small>
+                    </p>
+                </blockquote>
 
                 <h4>
                     3.資料前處理 Data Pre-process
                 </h4>
-                <p>這個步驟可對資料進行缺值過濾、常態分佈離群值過濾、正規化等預處理</p>
-                <p>從Function欄位中, 選擇Data Pre-processing按鈕, 開始進行資料預處理(Pre-process)</p>
+                <p>
+                    這個步驟可對資料進行缺值過濾、常態分佈離群值過濾、正規化等預處理<br>
+                    從Function欄位中, 選擇Data Pre-processing按鈕, 開始進行資料預處理(Pre-process)
+                </p>
+                <p>
+                    This step can be used to preprocess the data such as missing value filtering, normal distribution
+                    outlier filtering, and normalization.<br>
+                    From the Function field, select the Data Pre-processing button and start data preprocessing
+                </p>
                 <img class="img-fluid" src="img/demo/classification/04_KDD_preprocess-1.png" alt="">
-                <blockquote><p><small>
-                    Step 1<br>
-                    1. 正在處理的資料檔案名稱，與檔案所在的Server<br>
-                    2. 選擇欄位<br>
-                    3. 預覽該欄位的資料分佈直方圖<br>
-                    4. 取消回到KDD流程頁面<br>
-                </small></p></blockquote>
+                <blockquote>
+                    <p>
+                        <small>
+                            Step 1<br>
+                            1. 正在處理的資料檔案名稱，與檔案所在的Server (The name of the data file being processed, and the server where
+                            the file is located)<br>
+                            2. 選擇欄位 (Select the field)<br>
+                            3. 預覽該欄位的資料分佈直方圖 (Preview the data distribution histogram for this field)<br>
+                            4. 取消回到KDD流程頁面 (Cancel back to the KDD process page)<br>
+                        </small>
+                    </p>
+                </blockquote>
                 <img class="img-fluid" src="img/demo/classification/05_preprocess-1.png" alt="">
-                <blockquote><p><small>
-                    Step 2<br>
-                    1. 對資料進行缺值過濾，如果該列資料有NAN則會刪除該列資料，這個步驟能夠確保訓練時不會因為資料不齊全而出現錯誤<br>
-                    2. 對該欄位資料進行利用常態分佈離群值過濾，1 std表示將過慮掉1個標準差以外的離群資料，0 std表示不對資料做離群值過濾<br>
-                    3. 執行上述處理並預覽該欄位處理過後的資料分佈直方圖<br>
-                    4. 取消處理動作回到Step 1選擇欄位<br>
-                </small></p></blockquote>
+                <blockquote>
+                    <p>
+                        <small>
+                            Step 2<br>
+                            1. 對資料進行缺值過濾，如果該列資料有NAN則會刪除該列資料，這個步驟能夠確保訓練時不會因為資料不齊全而出現錯誤(Impose the value filter for the
+                            data. If there is a NaN in the column, the data will be
+                            deleted. This step can ensure that the training will not be wrong because the data is not
+                            complete.)<br>
+                            2. 對該欄位資料進行利用常態分佈離群值過濾，1 std表示將過慮掉1個標準差以外的離群資料，0 std表示不對資料做離群值過濾(Use the normal distribution
+                            of the data in the field. Outlier filtering, 1 std indicates
+                            that outlier data other than one standard deviation will be taken into account, 0
+                            stdindicates that outlier filtering is not performed on the data.)<br>
+                            3. 執行上述處理並預覽該欄位處理過後的資料分佈直方圖(Perform the above processing and preview Data distribution
+                            histogram after this
+                            field is processed.)<br>
+                            4. 取消處理動作回到Step 1選擇欄位(The processing operation is canceled and Step 1 is selected.)<br>
+                        </small>
+                    </p>
+                </blockquote>
                 <img class="img-fluid" src="img/demo/classification/05_preprocess-2.png" alt="">
-                <blockquote><p><small>
-                    Step 3<br>
-                    1. 選擇Normalize的演算法<br>
-                    2. 選擇欲進行Normalize的資料欄位，進行Normalize能夠將資料Scale到相同的range<br>
-                    3. 輸入處理過資料的新檔案名稱<br>
-                    4. 儲存處理過的新資料，並回到KDD流程頁面
-                    5. 取消處理動作，不儲存處理過的新資料，並回到KDD流程頁面<br>
-                </small></p></blockquote>
-                <p>這個範例將資料進行缺值過濾、常態分佈離群值過濾處理，正規化（
-                    <a href="file/iris-preprocess.csv">下載</a> 檔案觀察資料變化，1.8 kB）。<br>
-                    處理後的檔案成功儲存後回會到KDD頁面,進行下一步特徵選擇</p>
+                <blockquote>
+                    <p>
+                        <small>
+                            Step 3<br>
+                            1. 選擇Normalize的演算法(Select Normalize's algorithm)<br>
+                            2. 選擇欲進行Normalize的資料欄位，進行Normalize能夠將資料Scale到相同的range(Select the data field you want to
+                            Normalize. Normalize can scale the data to the same
+                            range)<br>
+                            3. 輸入處理過資料的新檔案名稱(Enter the new file name of the processed data.)<br>
+                            4. 儲存處理過的新資料，並回到KDD流程頁面(Save the processed new data, and Go back to the KDD process
+                            page)<br>
+                            5. 取消處理動作，不儲存處理過的新資料，並回到KDD流程頁面(Cancel the processing action, do not save the processed new
+                            data, and return to the
+                            KDD process page)
+                        </small>
+                    </p>
+                </blockquote>
+                <p>
+                    這個範例將資料進行正規化，然後將Pregnant_times缺值過濾、常態分佈離群值過濾處理。
+                    （<a href="file/iris-preprocess.csv">下載</a> 檔案觀察資料變化，1.8 kB）。<br>
+                    處理後的檔案成功儲存後回會到KDD頁面,進行下一步特徵選擇
+                </p>
+                <p>
+                    This paradigm normalizes the data and then filters the Prevalence_times value-deficient filter and
+                    the normal distribution outlier filter. (<a href="file/iris-preprocess.csv">Download </a>file
+                    observations change, 21.5 kB).
+                    After the processed file is successfully saved, it will return to the KDD page for the next feature
+                    selection.
+                </p>
 
                 <h4>
                     4.特徵選擇 Feature Selection
                 </h4>
-                <p>這個步驟是利用Pearson Correlation演算法計算各個Feature間的關係程度,以作為選擇Feature的參考</p>
+                <p>
+                    這個步驟是利用Pearson Correlation演算法計算各個Feature間的關係程度,以作為選擇Feature的參考<br>
+                    This step is to use the Pearson Correlation algorithm to calculate the degree of relationship
+                    between
+                    each Feature as a reference for selecting Feature.
+                </p>
                 <img class="img-fluid" src="img/demo/classification/06_KDD_feature.png" alt="">
-                <blockquote><p><small>
-                    KDD：Feature Selection<br>
-                    1. 提示欄，說明剛剛成功儲存了pre-processed過的檔案<br>
-                    2. pre-processed過的新檔案<br>
-                    3. 功能欄現在建議對該檔案進行Feature Selection的動作<br>
-                </small></p></blockquote>
-                <p>我們從功能欄點選Feature Selection，開始進行特徵選擇</p>
+                <blockquote>
+                    <p>
+                        <small>
+                            KDD：Feature Selection<br>
+                            1. 提示欄，說明剛剛成功儲存了pre-processed過的檔案(Prompt bar stating that the pre-processed file has been
+                            successfully saved)<br>
+                            2. pre-processed過的新檔案(The pre-processed new file)<br>
+                            3. 功能欄現在建議對該檔案進行Feature Selection的動作(The function bar now proposes a Feature Selection
+                            action on this file.)<br>
+                        </small>
+                    </p>
+                </blockquote>
+                <p>
+                    我們從功能欄點選Feature Selection，開始進行特徵選擇<br>
+                    We select Feature Selection from the function bar to start feature selection
+                </p>
                 <img class="img-fluid" src="img/demo/classification/07_feature.png" alt="">
                 <img class="img-fluid" src="img/demo/classification/07_feature-1.png" alt="">
-                <blockquote><p><small>
-                    Feature Selection<br>
-                    1. 正在進行特徵選擇的資料檔案名稱，與檔案所在的Server<br>
-                    2. 選擇計算特徵關係係數的演算法<br>
-                    3. 顯示該欄位的資料平均值<br>
-                    4. 顯示該欄位的資料標準差<br>
-                    5. 顯示該欄位的平均關係係數<br>
-                    6. 顯示該欄位對應其它欄位的關係係數<br>
-                    7. 選擇要留下來的特徵<br>
-                    8. 輸入新檔案名稱<br>
-                    9. 儲存新資料，並回到KDD流程頁面<br>
-                    10. 不儲存並回到KDD流程<br>
-                </small></p></blockquote>
-                <p>這個範例選擇sepal length, petal length, petal width 這三個特徵（
-                    <a href="file/pre-processed.csv">下載</a> 檔案觀察資料變化，2.0 kB）。</p>
+                <blockquote>
+                    <p>
+                        <small>
+                            Feature Selection<br>
+                            1. 正在進行特徵選擇的資料檔案名稱，與檔案所在的Server(The name of the data file for feature selection, and the
+                            server where the file is located)<br>
+                            2. 選擇計算特徵關係係數的演算法(Select the algorithm for calculating the feature-relation coefficient)<br>
+                            3. 顯示該欄位的資料平均值(Display the average value of the data in this field)<br>
+                            4. 顯示該欄位的資料標準差(Display the data standard deviation for this field)<br>
+                            5. 顯示該欄位的平均關係係數(Display the average correlation coefficient for this field)<br>
+                            6. 顯示該欄位對應其它欄位的關係係數(Display the correlation coefficient of this field with the other
+                            fields.)<br>
+                            7. 選擇要留下來的特徵(Select the feature to leave.)<br>
+                            8. 輸入新檔案名稱(Enter the new file name.)<br>
+                            9. 儲存新資料，並回到KDD流程頁面(Save the new data and return to the KDD process page. Save and return to
+                            KDD process)<br>
+                            10. 不儲存並回到KDD流程(Cancel and back to KDD)<br>
+                        </small>
+                    </p>
+                </blockquote>
+                <p>
+                    這個範例選擇sepal length, petal length, petal width 這三個特徵（
+                    <a href="file/pre-processed.csv">下載</a> 檔案觀察資料變化，2.0 kB）。<br>
+                    This example selects the three characteristics of sepal length, petal length, and petal width
+                    (<a href="file/pre-processed.csv">download</a>> file observation data changes, 2.0 kB).
+                </p>
                 <img class="img-fluid" src="img/demo/classification/07_feature-2.png" alt="">
                 <img class="img-fluid" src="img/demo/classification/08-KDD-model.png" alt="">
-                <p>為了比較欄位的效果,再做一次Feature Selection,這次四個特徵全選,
-                    成功儲存後回到KDD頁面可以看到有兩個檔案有不同的欄位數量,進行下一步模型訓練</p>
-
+                <p>
+                    為了比較欄位的效果,再做一次Feature Selection,這次四個特徵全選,
+                    成功儲存後回到KDD頁面可以看到有兩個檔案有不同的欄位數量,進行下一步模型訓練
+                </p>
+                <p>
+                    In order to compare the effect of the field, do a Feature Selection once again. This time all the
+                    four
+                    features are selected. After successfully saving and returning to the KDD page, you can see that
+                    there are two files with different number of fields for the next model training.
+                </p>
                 <h4>
                     5.模型訓練 Model Training
                 </h4>
                 <p>
                     這個步驟能夠選擇演算法對資料進行模型訓練，並預覽訓練出來的模型<br>
-                    從功能欄點選Model Training，開始進行特徵選擇
+                    This step can select algorithms to model the data and preview the trained models
                 </p>
                 <img class="img-fluid" src="img/demo/classification/08_model-1.png" alt="">
-                <blockquote><p><small>
-                    Model Training<br>
-                    1. 正在進行模型訓練的資料檔案名稱，與檔案所在的Server<br>
-                    2. 選擇模型訓練的演算法<br>
-                    3. 設定演算法參數，或直接使用預設值<br>
-                    4. 輸入模型名稱<br>
-                    5. 進行模型訓練<br>
-                    6. 回到KDD流程<br>
-                </small></p></blockquote>
+                <blockquote>
+                    <p>
+                        <small>
+                            Model Training<br>
+                            1. 正在進行模型訓練的資料檔案名稱，與檔案所在的Server(The name of the data file that is being model-trained, and
+                            the server where the file
+                            resides.)<br>
+                            2. 選擇模型訓練的演算法(Select the model training algorithm)<br>
+                            3. 設定演算法參數，或直接使用預設值(Set the algorithm parameters, or use the default value directly)<br>
+                            4. 輸入模型名稱(Enter the model name)<br>
+                            5. 進行模型訓練(Perform the model training)<br>
+                            6. 回到KDD流程(Back to KDD process)<br>
+                        </small>
+                    </p>
+                </blockquote>
                 <img class="img-fluid" src="img/demo/classification/08_model-2.png" alt="">
-                <blockquote><p><small>
-                    Model Preview<br>
-                    1. 選擇兩個資料欄位<br>
-                    2. 顯示訓練好的模型圖<br>
-                </small></p></blockquote>
-                <p>兩個檔案都分別進行模型訓練訓，練出來的兩個模型可以在Model Management頁面看到</p>
+                <blockquote>
+                    <p>
+                        <small>
+                            Model Preview<br>
+                            1. 選擇兩個資料欄位(Select two data fields)<br>
+                            2. 顯示訓練好的模型圖(Display trained model diagram)<br>
+                        </small>
+                    </p>
+                </blockquote>
+                <p>
+                    訓練出來的模型可以在Model Management頁面管理<br>
+                    Trained models can be managed on the Model Management page
+                </p>
                 <img class="img-fluid" src="img/demo/classification/08_model_management.png" alt="">
                 <img class="img-fluid" src="img/demo/classification/08_model_management-1.png" alt="">
-                <blockquote><p><small>
-                    Model Management<br>
-                    1. 模型名稱<br>
-                    2. 模型訓練使用的演算法<br>
-                    3. 訓練使用的檔案及參數<br>
-                    4. 將模型匯出成API<br>
-                    5. 修改模型資料<br>
-                    6. 刪除模型<br>
-                </small></p></blockquote>
+                <blockquote>
+                    <p>
+                        <small>
+                            Model Management<br>
+                            1. 模型名稱(Model name)<br>
+                            2. 模型訓練使用的演算法(Algorithm used for model training)<br>
+                            3. 訓練使用的檔案及參數(Files and parameters used for training)<br>
+                            4. 將模型匯出成API(Export model to API)<br>
+                            5. 修改模型資料(Modify model data)<br>
+                            6. 刪除模型(Delete model)<br>
+                        </small>
+                    </p>
+                </blockquote>
 
                 <h4>
                     6.模型預測 Model Prediction
                 </h4>
                 <p>
-                    這個步驟能夠利用已經訓練好的模型對新的資料進行預測，並顯示預測分類的結果及準確度
+                    這個步驟能夠利用已經訓練好的模型對新的資料進行預測，並顯示預測分類的結果及準確度<br>
+                    This step can use the already trained model to predict new data and show the results and accuracy of
+                    the predictive classification.
                 </p>
                 <img class="img-fluid" src="img/demo/classification/09-predict-0.png" alt="">
                 <img class="img-fluid" src="img/demo/classification/09-predict-0-label.png" alt="">
                 <img class="img-fluid" src="img/demo/classification/09-predict-1-kdd.png" alt="">
                 <img class="img-fluid" src="img/demo/classification/09-predict-2.png" alt="">
-                <blockquote><p><small>
-                    Select Model to Predict<br>
-                    1. 模型名稱<br>
-                    2. 模型訓練使用的演算法<br>
-                    3. 訓練使用的檔案及參數<br>
-                    4. 勾選一個模型來進行預測<br>
-                    5. 進行預測<br>
-                    6. 取消回到KDD流程<br>
-                </small></p></blockquote>
+                <blockquote>
+                    <p>
+                        <small>
+                            Select Model to Predict<br>
+                            1. 模型名稱<br>
+                            2. 模型訓練使用的演算法<br>
+                            3. 訓練使用的檔案及參數<br>
+                            4. 勾選一個模型來進行預測<br>
+                            5. 進行預測<br>
+                            6. 取消回到KDD流程<br>
+                        </small>
+                    </p>
+                </blockquote>
                 <img class="img-fluid" src="img/demo/classification/09-predict-3.png" alt="">
-                <blockquote><p><small>
-                    Prediction Result<br><br>
-                    [ Classification Report ] 公式說明參考<a href="https://blog.argcv.com/articles/1036.c">連結</a><br>
-                    1. 類別名稱<br>
-                    2. precision:精確率的公式是P=TP/(TP+FP),計算的是所有"正確預測的物件(TP)"占所有"預測成這個類別的物件(TP+FP)"的比例.<br>
-                    3. recall:召回率的公式是R=TP/(TP+FN),計算的是所有"正確預測的物件(TP)"占所有"應該被預測到的物件(TP+FN)"的比例。<br>
-                    4. f1-score:F1值就是精確率和召回率的調和均值,也就是F1=2*TP/(2*TP+FP+FN)<br>
-                    5. support:這個類別被預測到的數量<br>
-                    6. 所有類別的平均預測表現<br>
-                    [ Confusion Matrix ]<br>
-                    7. 模型預測出來的標籤<br>
-                    8. 使用者給定的正確標籤<br>
-                    * 綠色圈起來斜對角的部份代表"正確預測的數量"<br>
-                    * 其餘的部份是預測錯誤，例如圖中的紅色圈圈代表有一筆資料被預測成Iris-versicolor這個類別，但實際上應該是Iris-verginica
-                </small></p></blockquote>
+                <blockquote>
+                    <p>
+                        <small>
+                            Prediction Result<br><br>
+                            [ Classification Report ] 公式說明參考<a href="https://blog.argcv.com/articles/1036.c">連結</a><br>
+                            [Calenism Report] Formula Description Reference<a
+                                href="https://blog.argcv.com/articles/1036.c"> Link</a><br>
+                            1. 類別名稱(Class Name)<br>
+                            2. precision:精確率的公式是P=TP/(TP+FP),計算的是所有"正確預測的物件(TP)"占所有"預測成這個類別的物件(TP+FP)"的比例.(precision:
+                            The formula for the accuracy rate is P=TP/(TP+FP), which calculates
+                            that all "properly predicted items (TP)" account for all "prediction" The proportion of
+                            items in this category (TP + FP).)<br>
+                            3. recall:召回率的公式是R=TP/(TP+FN),計算的是所有"正確預測的物件(TP)"占所有"應該被預測到的物件(TP+FN)"的比例。(recall: The
+                            formula for the recall rate is R = TP / (TP + FN), and the calculation is
+                            that all "properly predicted items (TP)" account for all "should be The proportion of
+                            predicted items (TP+FN).)<br>
+                            4. f1-score:F1值就是精確率和召回率的調和均值,也就是F1=2*TP/(2*TP+FP+FN)(f1-score: The F1 value is the harmonic
+                            mean of the precision rate and recall rate,
+                            that is, F1=2*TP/(2*TP+FP+FN))<br>
+                            5. support:這個類別被預測到的數量(support: The quantity predicted for this category)<br>
+                            6. 所有類別的平均預測表現(Average: The average prediction performance)<br>
+                            [ Confusion Matrix ]<br>
+                            7. 模型預測出來的標籤(The label predicted by the model)<br>
+                            8. 使用者給定的正確標籤(The correct label given by the user)<br>
+                            * 綠色圈起來斜對角的部份代表"正確預測的數量"<br>
+                            * 其餘的部份是預測錯誤，例如圖中的紅色圈圈代表有一筆資料被預測成Iris-versicolor這個類別，但實際上應該是Iris-verginica<br>
+                            * The diagonally green part of the circle represents the "correct predicted quantity"<br>
+                            * The rest is prediction errors. For example, the red circle in the figure indicates that
+                            there is a piece of data predicted to be Iris-versicolor, but it should actually be Iris-
+                            verginica.<br>
+
+                        </small>
+                    </p>
+                </blockquote>
                 <h4>
                     7.建立API Export API
                 </h4>
-                <p>這個步驟能夠將訓練好的模型建立成API，以利更多的應用</p>
+                <p>
+                    這個步驟能夠將訓練好的模型建立成API，以利更多的應用<br>
+                    This step can build a trained model into an API for more applications
+                </p>
                 <img class="img-fluid" src="img/demo/classification/09_0exportAPI.png" alt="">
                 <span class="caption text-muted">選擇Export API的功能</span>
                 <img class="img-fluid" src="img/demo/clustering/09_1setAPI.png" alt="">
-                <blockquote><p><small>
-                    Set API Input<br>
-                    1. 輸入API的名稱，以及API功能描述<br>
-                    2. 輸入自訂的API Input Key<br>
-                    3. 輸入API Input描述<br>
-                </small></p></blockquote>
+                <blockquote>
+                    <p>
+                        <small>
+                            Set API Input<br>
+                            1. 輸入API的名稱，以及API功能描述(Name of the input API, and description of the API function)<br>
+                            2. 輸入自訂的API Input Key(Input custom API Input Key)<br>
+                            3. 輸入API Input描述(Input API Input Description)<br>
+                        </small>
+                    </p>
+                </blockquote>
                 <img class="img-fluid" src="img/demo/classification/09_1setAPI-1.png" alt="">
-                <blockquote><p><small>
-                    Set API Output<br>
-                    1. 輸入自訂的API Output Key<br>
-                    2. 輸入API Output描述<br>
-                    3. 儲存並建立API<br>
-                    4. 不儲存回到Model Management<br>
-                </small></p></blockquote>
-                <p>建立API後，會顯示API呼叫URL以及API輸入輸出的json格式</p>
+                <blockquote>
+                    <p>
+                        <small>
+                            Set API Output<br>
+                            1. 輸入自訂的API Output Key(Enter the custom API Output Key)<br>
+                            2. 輸入API Output描述(Enter the API Output description)<br>
+                            3. 儲存並建立API(Save and create the API)<br>
+                            4. 不儲存回到Model Management(Do not save back to Model Management)<br>
+                        </small>
+                    </p>
+                </blockquote>
+                <p>
+                    建立API後，會顯示API呼叫URL以及API輸入輸出的json格式<br>
+                    After the API is created, the API call URL and API input/output json format are displayed
+                </p>
                 <img class="img-fluid" src="img/demo/classification/09_2showAPI.png" alt="">
-                <blockquote><p><small>
-                    Show API Format<br>
-                    1. API的名稱<br>
-                    2. API的呼叫路徑<br>
-                    3. API Input格式<br>
-                    4. API Output格式<br>
-                </small></p></blockquote>
-                <p>點選上方功能列的API ，可以檢視全部建立好的API</p>
+                <blockquote>
+                    <p>
+                        <small>
+                            Show API Format<br>
+                            1. API的名稱(API Name)<br>
+                            2. API的呼叫路徑(API Call Path)<br>
+                            3. API Input格式(API Input Format)<br>
+                            4. API Output格式(API Output Format)<br>
+                        </small>
+                    </p>
+                </blockquote>
+                <p>
+                    點選上方功能列的API ，可以檢視全部建立好的API<br>
+                    Click on the API above to view all established APIs
+                </p>
                 <img class="img-fluid" src="img/demo/classification/09_3API_manegement.png" alt="">
-                <blockquote><p><small>
-                    Model Training<br>
-                    1. 輸入API的名稱<br>
-                    2. API功能描述<br>
-                    3. API建立資訊<br>
-                    4. 編輯API<br>
-                    5. 刪除API<br>
-                </small></p></blockquote>
+                <blockquote>
+                    <p>
+                        <small>
+                            API Management<br>
+                            1. 輸入API的名稱(Enter the name of the API)<br>
+                            2. API功能描述(API function description)<br>
+                            3. API建立資訊(API creation information)<br>
+                            4. 編輯API(Edit API)<br>
+                            5. 刪除API(Delete API)<br>
+                        </small>
+                    </p>
+                </blockquote>
             </div>
         </div>
         <div class="row">
