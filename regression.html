@@ -9,10 +9,14 @@ layout: default
             <div class="col-lg-8 col-md-10 mx-auto">
                 <div class="post-heading">
                     <h1>Regression</h1>
-                    <h2 class="subheading">迴歸（Regression）是找一個函數，盡量符合訓練資料數據，通過迴歸模型由給出的自變量預測因變量的值。</h2>
+                    <h2 class="subheading">
+                        迴歸是找一個函數，盡量符合訓練資料數據，通過迴歸模型由給出的自變量預測因變量的值。<br>
+                        Regression is a form of predictive modelling technique which investigates the relationship between
+a dependent variable (target) and independent variable(s) (predictor).
+                    </h2>
                     <span class="meta">Posted by
                 <a href="#">InAnalysis</a>
-                on August 23, 2017</span>
+                on August 20, 2018</span>
                 </div>
             </div>
         </div>
@@ -30,43 +34,58 @@ layout: default
                     迴歸分析是根據已知樣本的某些特徵，推論一個樣本的答案。迴歸分析問題是監督式學習的一種，
                     根據已知訓練區提供的樣本，通過計算選擇特徵參數，建立判別函數以對樣本進行推論。
                 </p>
+                <p>
+                    Regression Analysis is supervised learning technique which performs the task of approximating a
+mapping function (f) from input variables (X) to a continuous output variable (y). Here, we fit a
+curve/line to the data points, in such a manner that the differences between the distances of data
+points from the curve or line is minimized.
+                </p>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <h2 class="section-heading">Example</h2>
                 <hr>
-                <h5>欲解決的問題</h5>
-                <p>由連續三小時的大氣數據(O3、PM10、PM2.5、風速)來預測第四小時的PM2.5數值。</p>
+                <h5>欲解決的問題 Problem to be solved:</h5>
+                <p>
+                    由連續三小時的大氣數據(O3、PM10、PM2.5、風速)來預測第四小時的PM2.5數值。<br>
+                    The fourth-hour PM2.5 value was predicted from three consecutive hours of
+atmospheric data (O3, PM10, PM2.5, wind speed).
+                </p>
                 <img class="img-fluid" src="img/demo/regression/pm2.5.png" alt="">
                 <span class="caption text-muted">PM2.5</span>
-                <h5>資料欄位說明</h5>
+                <h5>資料欄位說明 Data field description:</h5>
                 <p>
-                    1.O3(前一小時臭氧值)<br>
-                    2.PM10(前一小時PM10值)<br>
-                    3.PM25-3(前三小時PM2.5值)<br>
-                    4.PM25-2(前二小時PM2.5值)<br>
-                    5.PM25(前一小時PM2.5值)<br>
-                    6.WS_HR(前一小時風速值)<br>
-                    7.ANS(實際檢測到的PM2.5數值)
+                    1.O3(前一小時臭氧值 ozone value in the previous hour)<br>
+                    2.PM10(前一小時PM10值 PM10 value in the previous hour)<br>
+                    3.PM25-3(前三小時PM2.5值 PM2.5 value in the previous 3 hours)<br>
+                    4.PM25-2(前二小時PM2.5值 PM2.5 value in the previous 2 hours)<br>
+                    5.PM25(前一小時PM2.5值 PM2.5 value in the previous hour)<br>
+                    6.WS_HR(前一小時風速值 wind speed value in the previous hour)<br>
+                    7.ANS(實際檢測到的PM2.5數值 PM2.5 value actually detected)
                 </p>
-                <h5>資料來源</h5>
+                <h5>資料來源 Source:</h5>
                 <p>環保署:
-                    <a href="https://taqm.epa.gov.tw/taqm/tw/YearlyDataDownload.aspx">空氣品質測站＼歷年監測資料下載</a>
+                    <a href="https://taqm.epa.gov.tw/taqm/tw/YearlyDataDownload.aspx">空氣品質測站＼歷年監測資料下載</a><br>
+                    EPA: <a href="https://taqm.epa.gov.tw/taqm/tw/YearlyDataDownload.aspx">
+                        Air quality station monitoring data download</a>
                 </p>
-                <h5>建立訓練資料</h5>
+                <h5>建立訓練資料 Training Dataset:</h5>
                 <p>
-                    下載pm2.5Train.csv作為訓練檔（
-                    <a href="file/pm2.5Train.csv">下載</a> 1.8 kB ）
+                    下載pm2.5Train.csv作為訓練檔（<a href="file/pm2.5Train.csv">下載</a> 1.8 kB ）<br>
+                    Download pm2.5Train.csv as a training file (<a href="file/pm2.5Train.csv">Download</a>1.8 kB)
                 </p>
-                <h5>建立測試資料</h5>
+                <h5>建立測試資料 Test Dataset:</h5>
                 <p>
-                    下載pm2.5Test.csv作為訓練檔（
-                    <a href="file/pm2.5Test.csv">下載</a> 1.8 kB ）
+                    下載pm2.5Test.csv作為訓練檔（<a href="file/pm2.5Test.csv">下載</a> 1.8 kB ）<br>
+                    Download pm2.5Test.csv as a training file (<a href="file/pm2.5Test.csv">Download</a>1.8 kB)
                 </p>
-                <h5>模型建立方法</h5>
-                <p>用linear regression演算法建立預測模型</p>
-                <h5>模型結果預覽</h5>
+                <h5>模型建立方法 Build Predictive Model:</h5>
+                <p>
+                    用linear regression演算法建立預測模型<br>
+                    Using linear regression algorithm to establish prediction model
+                </p>
+                <h5>模型結果預覽 Model Results Preview:</h5>
                 <img class="img-fluid" src="img/demo/regression/model_preview.png" alt="">
             </div>
         </div>
@@ -74,7 +93,10 @@ layout: default
             <div class="col-lg-8 col-md-10 mx-auto">
                 <h2 class="section-heading">Step by Step</h2>
                 <hr>
-                <p>跟著以下流程操作示範，即可輕鬆建立PM2.5預測模型</p>
+                <p>
+                    跟著以下流程操作示範，即可輕鬆建立PM2.5預測模型<br>
+                    With the following process demonstration, you can easily establish a sales price prediction model
+                </p>
                 <h4>
                     1.建立專案 Create Project
                 </h4>
