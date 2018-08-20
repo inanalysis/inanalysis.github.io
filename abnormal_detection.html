@@ -9,7 +9,8 @@ layout: default
             <div class="col-lg-8 col-md-10 mx-auto">
                 <div class="post-heading">
                     <h1>Abnormal Detection</h1>
-                    <h2 class="subheading">異常檢測通過尋找與其他資料最不符合的例項來檢測出未標記測試資料的異常。Anomaly detection is the process of
+                    <h2 class="subheading">異常檢測通過尋找與其他資料最不符合的例項來檢測出未標記測試資料的異常。<br>
+                        Anomaly detection is the process of
                         identification of items, events or observations which do not
                         conform to an expected pattern or other items in a dataset.</h2>
                     <span class="meta">Posted by<a href="#">InAnalysis</a>on August 20, 2018</span>
@@ -74,23 +75,22 @@ layout: default
                 </p>
                 <h5>建立訓練資料 Training Dataset:</h5>
                 <p>
-                    訓練資料為全部正常的資料,不需標記<br>
+                    訓練資料為全部正常的資料,不需標記。將pimaTrain.csv檔作為訓練檔<br>
                     It is normal data (no need to mark). File is pimaTrain.csv<br>
-                    將pimaTrain.csv檔作為訓練檔<br>
-                    File is pimaTrain.csv<br>
                     （ <a href="file/pimaTrain.csv">下載 Download</a> 7 kB ）
                 </p>
                 <h5>建立預測資料 Prediction Dataset</h5>
                 <p>
-                    預測資料為正常與異常混合的資料(需要標記：正常需標記為1,異常需標記為-1)<br>
-                    It is mixed data - normal and abnormal (need to mark: normal as 1, abnormal as -1).<br>
-                    將pimaTest.csv檔作為訓練檔<br>
-                    The file is pimaTest.csv<br>
+                    預測資料為正常與異常混合的資料(需要標記：正常需標記為1,異常需標記為-1)。將pimaTest.csv檔作為訓練檔<br>
+                    It is mixed data - normal and abnormal (need to mark: normal as 1, abnormal as -1).The file is pimaTest.csv<br>
                     （ <a href="file/pimaTest.csv">下載 Download</a> 6 kB ）
                 </p>
                 <h5>模型建立方法 Build Predictive Model:</h5>
-                <p>用one-class SVM演算法建立預測模型</p>
-                <p>Using one-class SVM algorithm to establish prediction model</p>
+                <p>
+                    用one-class SVM演算法建立預測模型<br>
+                    Using one-class SVM algorithm to establish prediction model
+                </p>
+
                 <h5>模型結果預覽 Model Results Preview:</h5>
                 <img class="img-fluid" src="img/demo/abnormal/model_preview.png" alt="">
             </div>
@@ -112,50 +112,60 @@ layout: default
                     <p>
                         <small>
                             InAnalysis User Dashboard <br>
-                            1. 回到InAnalysis User Dashboard<br>
-                            2. 進入Project Management, 可新增、修改、刪除Project<br>
-                            3. 進入API Management, 可新增、修改、刪除API<br>
-                            4. Documentation, 教學網站連結與範例資料檔案<br>
-                            5. Machine Learning Server Situation, 顯示Server是否正常啟動<br>
-                            6. Number of Projects, 顯示使用者建立的Project數量<br>
-                            7. 進入Project Management, 可新增、修改、刪除Project<br>
-                            8. Number of API, 顯示使用者建立的API數量<br>
-                            9. 進入API Management, 可新增、修改、刪除API<br>
+                            1. 回到InAnalysis User Dashboard （InAnalysis to go back to User Dashboard）<br>
+                            2. 進入Project Management, 可新增、修改、刪除Project （Project Management to add, modify or delete Project）<br>
+                            3. 進入API Management, 可新增、修改、刪除API （API Management to add, modify or delete API）<br>
+                            4. Documentation, 教學網站連結與範例資料檔案 （Documentation to display website tutorial and sample data file）<br>
+                            5. Machine Learning Server Situation, 顯示Server是否正常啟動 （Machine Learning Server Status to display which server is being used）<br>
+                            6. Number of Projects, 顯示使用者建立的Project數量 （Total Projects to display number of Projects created by the user.）<br>
+                            7. 進入Project Management, 可新增、修改、刪除Project （Project Management to add, modify or delete Project）<br>
+                            8. Number of API, 顯示使用者建立的API數量 （Total API to display number of APIs created by users）<br>
+                            9. 進入API Management, 可新增、修改、刪除API （API Management to add, modify, delete API）<br>
                         </small>
                     </p>
                 </blockquote>
-                <p>我們在這個頁面點選2.或是7.進入Project Management, 開始機器學習的流程</p>
+                <p>
+                    我們在這個頁面點選2.或是7.進入Project Management, 開始機器學習的流程<br>
+                    We click on this page 2. or 7. Enter Project Management to start the machine learning process
+                </p>
                 <img class="img-fluid" src="img/demo/abnormal/1_project.png" alt="">
                 <blockquote>
                     <p>
                         <small>
                             Project Management <br>
-                            1. 選擇Project Type, 四種Project Type有不同的任務<br>
-                            2. 輸入Project的名稱<br>
-                            3. 新增Project<br>
+                            1. 選擇Project Type, 四種Project Type有不同的任務 (Select Project Type out of the four available tasks based on your requirement)<br>
+                            2. 輸入Project的名稱 (Enter Project Name)<br>
+                            3. 新增Project (Click Create Project)<br>
                         </small>
                     </p>
                 </blockquote>
-                <p>建立Clustering專案</p>
+                <p>建立Clustering專案 Create Clustering Project</p>
                 <img class="img-fluid" src="img/demo/abnormal/1_project-1.png" alt="">
-                <p>成功新增Project後點選KDD, 開始機器學習的流程</p>
+                <p>
+                    成功新增Project後點選KDD, 開始機器學習的流程<br>
+                    Click KDD after successfully adding Project to start the machine learning process
+                </p>
 
                 <h4>
                     2.檔案上傳 Data Input
                 </h4>
-                <p>上傳csv資料檔案以進行KDD流程</p>
+                <p>
+                    上傳csv資料檔案以進行KDD流程<br>
+                    Upload .csv data file for KDD process
+                </p>
                 <img class="img-fluid" src="img/demo/abnormal/2_KDD_upload.png" alt="">
                 <blockquote>
                     <p>
                         <small>
                             KDD：Data Input<br>
-                            1. 點選可看到KDD各個流程的詳細說明<br>
-                            2. 提示欄，建議使用者下一個步驟可以做什麼<br>
-                            3. Model Management，這個Project訓練出來的所有模型可在這邊瀏覽，修改資訊或Export成API<br>
-                            4. 選擇資料上傳的階段<br>
-                            5. 從本機端選擇資料<br>
-                            6. 點選進行資料上傳<br>
-                            7. 顯示Server是否正常啟動<br>
+                            1. 點選可看到KDD各個流程的詳細說明 (Click to see the detailed description of each process of KDD)<br>
+                            2. 提示欄，建議使用者下一個步驟可以做什麼 (Prompt bar, suggest the user can do the next step)<br>
+                            3. Model Management，這個Project訓練出來的所有模型可在這邊瀏覽，修改資訊或Export成API (Model Management, all models trained by this Project can be browsed here, modify
+Information or Export into API)<br>
+                            4. 選擇資料上傳的階段 (Select the stage for uploading data)<br>
+                            5. 從本機端選擇資料 (Select data from the local computer)<br>
+                            6. 點選進行資料上傳 (Click to upload data)<br>
+                            7. 顯示Server是否正常啟動 (Display whether the server starts normally)<br>
                         </small>
                     </p>
                 </blockquote>
@@ -165,32 +175,38 @@ layout: default
                     <p>
                         <small>
                             Data Information<br>
-                            1. 顯示上傳資料的檔案名稱<br>
-                            2. 點選可看到該資料的操作紀錄說明<br>
-                            3. 顯示該資料所在的Server<br>
-                            4. 顯示資料欄位數量<br>
-                            5. 顯示該資料被設為標籤的欄位名稱，若該資料無標籤則顯示「No Label」<br>
-                            6. 點選按鈕可對該資料進行各項操作處理，綠色為系統建議的下一步操作<br>
-                            7. 點選預覽整份資料<br>
-                            8. 點選可下載資料<br>
-                            9. 點選會將該資料刪除<br>
+                            1. 顯示上傳資料的檔案名稱 (Display the file name of the uploaded data)<br>
+                            2. 點選可看到該資料的操作紀錄說明 (Click to see the operation record done for the data)<br>
+                            3. 顯示該資料所在的Server (Display the server where the data is located)<br>
+                            4. 顯示資料欄位數量 (Display the data field number)<br>
+                            5. 顯示該資料被設為標籤的欄位名稱，若該資料無標籤則顯示「No Label」(Display the field where the data is set as the label Name, if there is no label in the
+data, "No Label" will be displayed)<br>
+                            6. 點選按鈕可對該資料進行各項操作處理，綠色為系統建議的下一步操作 (Click the button to perform various operations on the data. Green color suggests the
+next step that should be taken.)<br>
+                            7. 點選預覽整份資料 (Click to preview the entire data)<br>
+                            8. 點選可下載資料 (Click to download Data)<br>
+                            9. 點選會將該資料刪除 (Click to delete the data)<br>
                         </small>
                     </p>
                 </blockquote>
-                <p>我們點選7.Preview來預覽整份資料</p>
+                <p>我們點選7.Preview來預覽整份資料 <br>
+                We click on 7.Preview to preview the entire data
+                </p>
                 <img class="img-fluid" src="img/demo/abnormal/2_data_viewer.png" alt="">
                 <blockquote>
                     <p>
                         <small>
                             Data Viewer<br>
-                            1. 正在預覽的資料檔案名稱，與檔案所在的Server<br>
-                            2. 顯示該資料的所有欄位名稱<br>
-                            3. 顯示該欄位的第一項資料<br>
-                            4. 顯示該欄位的資料型態<br>
-                            5. 顯示該欄位的資料平均值，若為非數值型態則會顯示「-」<br>
-                            6. 顯示該欄位的資料標準差，若為非數值型態則會顯示「-」<br>
-                            7. 點選可看到該欄位的所有資料分佈直方圖<br>
-                            8. 點選回到KDD流程<br>
+                            1. 正在預覽的資料檔案名稱，與檔案所在的Server (The name of the data file being previewed, and the server where the file is located)<br>
+                            2. 顯示該資料的所有欄位名稱 (Show all field names of the data)<br>
+                            3. 顯示該欄位的第一項資料 (Display the first data of this field)<br>
+                            4. 顯示該欄位的資料型態 (Display the data type of this field)<br>
+                            5. 顯示該欄位的資料平均值，若為非數值型態則會顯示「-」(Display The average value of the data in this field, if it is a non-numeric type, it will
+show "-")<br>
+                            6. 顯示該欄位的資料標準差，若為非數值型態則會顯示「-」 (The standard deviation of data in this field will be displayed. If it is a non-numeric
+type, "-" will be displayed)<br>
+                            7. 點選可看到該欄位的所有資料分佈直方圖 (Click to see All data distribution histogram for this field)<br>
+                            8. 點選回到KDD流程 (Click to return to KDD process)<br>
                         </small>
                     </p>
                 </blockquote>
@@ -198,17 +214,24 @@ layout: default
                 <h4>
                     3.資料前處理 Data Pre-process
                 </h4>
-                <p>這個步驟可對資料進行缺值過濾、常態分佈離群值過濾、正規化等預處理</p>
-                <p>從Function欄位中, 選擇Data Pre-processing按鈕, 開始進行資料預處理(Pre-process)</p>
+                <p>
+                    這個步驟可對資料進行缺值過濾、常態分佈離群值過濾、正規化等預處理<br>
+                    從Function欄位中, 選擇Data Pre-processing按鈕, 開始進行資料預處理(Pre-process)
+                </p>
+                <p>
+                    This step can be used to preprocess the data such as missing value filtering, normal distribution
+outlier filtering, and normalization.<br>
+                    From the Function field, select the Data Pre-processing button and start data preprocessing
+                </p>
                 <img class="img-fluid" src="img/demo/abnormal/3_preprocess-1.png" alt="">
                 <blockquote>
                     <p>
                         <small>
                             Step 1<br>
-                            1. 正在處理的資料檔案名稱，與檔案所在的Server<br>
-                            2. 選擇欄位<br>
-                            3. 預覽該欄位的資料分佈直方圖<br>
-                            4. 取消回到KDD流程頁面<br>
+                            1. 正在處理的資料檔案名稱，與檔案所在的Server (The name of the data file being processed, and the server where the file is located)<br>
+                            2. 選擇欄位 (Select the field)<br>
+                            3. 預覽該欄位的資料分佈直方圖 (Preview the data distribution histogram for this field)<br>
+                            4. 取消回到KDD流程頁面 (Cancel back to the KDD process page)<br>
                         </small>
                     </p>
                 </blockquote>
