@@ -11,8 +11,9 @@ layout: default
                     <h1>Regression</h1>
                     <h2 class="subheading">
                         迴歸是找一個函數，盡量符合訓練資料數據，通過迴歸模型由給出的自變量預測因變量的值。<br>
-                        Regression is a form of predictive modelling technique which investigates the relationship between
-a dependent variable (target) and independent variable(s) (predictor).
+                        Regression is a form of predictive modelling technique which investigates the relationship
+                        between
+                        a dependent variable (target) and independent variable(s) (predictor).
                     </h2>
                     <span class="meta">Posted by
                 <a href="#">InAnalysis</a>
@@ -36,9 +37,9 @@ a dependent variable (target) and independent variable(s) (predictor).
                 </p>
                 <p>
                     Regression Analysis is supervised learning technique which performs the task of approximating a
-mapping function (f) from input variables (X) to a continuous output variable (y). Here, we fit a
-curve/line to the data points, in such a manner that the differences between the distances of data
-points from the curve or line is minimized.
+                    mapping function (f) from input variables (X) to a continuous output variable (y). Here, we fit a
+                    curve/line to the data points, in such a manner that the differences between the distances of data
+                    points from the curve or line is minimized.
                 </p>
             </div>
         </div>
@@ -50,7 +51,7 @@ points from the curve or line is minimized.
                 <p>
                     由連續三小時的大氣數據(O3、PM10、PM2.5、風速)來預測第四小時的PM2.5數值。<br>
                     The fourth-hour PM2.5 value was predicted from three consecutive hours of
-atmospheric data (O3, PM10, PM2.5, wind speed).
+                    atmospheric data (O3, PM10, PM2.5, wind speed).
                 </p>
                 <img class="img-fluid" src="img/demo/regression/pm2.5.png" alt="">
                 <span class="caption text-muted">PM2.5</span>
@@ -100,118 +101,225 @@ atmospheric data (O3, PM10, PM2.5, wind speed).
                 <h4>
                     1.建立專案 Create Project
                 </h4>
-                <p>建立Regression Project以進行KDD流程訓練模型，並可將模型Export成API</p>
+                <p>建立Regression Project以進行KDD流程訓練模型，並可將模型Export成API<br>
+                Establish Regression Project for KDD process training model and export the model into API
+                </p>
                 <img class="img-fluid" src="img/demo/intro/01_index.png" alt="">
-                <blockquote><p><small>
-                    InAnalysis User Dashboard <br>
-                    1. 回到InAnalysis User Dashboard<br>
-                    2. 進入Project Management, 可新增、修改、刪除Project<br>
-                    3. 進入API Management, 可新增、修改、刪除API<br>
-                    4. Documentation, 教學網站連結與範例資料檔案<br>
-                    5. Machine Learning Server Situation, 顯示Server是否正常啟動<br>
-                    6. Number of Projects, 顯示使用者建立的Project數量<br>
-                    7. 進入Project Management, 可新增、修改、刪除Project<br>
-                    8. Number of API, 顯示使用者建立的API數量<br>
-                    9. 進入API Management, 可新增、修改、刪除API<br>
-                </small></p></blockquote>
-                <p>我們在這個頁面點選2.或是7.進入Project Management, 開始機器學習的流程</p>
+                <blockquote>
+                    <p>
+                        <small>
+                            InAnalysis User Dashboard <br>
+                            1. 回到InAnalysis User Dashboard （InAnalysis to go back to User Dashboard）<br>
+                            2. 進入Project Management, 可新增、修改、刪除Project （Project Management to add, modify or delete
+                            Project）<br>
+                            3. 進入API Management, 可新增、修改、刪除API （API Management to add, modify or delete API）<br>
+                            4. Documentation, 教學網站連結與範例資料檔案 （Documentation to display website tutorial and sample data
+                            file）<br>
+                            5. Machine Learning Server Situation, 顯示Server是否正常啟動 （Machine Learning Server Status to
+                            display which server is being used）<br>
+                            6. Number of Projects, 顯示使用者建立的Project數量 （Total Projects to display number of Projects
+                            created by the user.）<br>
+                            7. 進入Project Management, 可新增、修改、刪除Project （Project Management to add, modify or delete
+                            Project）<br>
+                            8. Number of API, 顯示使用者建立的API數量 （Total API to display number of APIs created by users）<br>
+                            9. 進入API Management, 可新增、修改、刪除API （API Management to add, modify, delete API）<br>
+                        </small>
+                    </p>
+                </blockquote>
+                                <p>
+                    我們在這個頁面點選2.或是7.進入Project Management, 開始機器學習的流程<br>
+                    We click on this page 2. or 7. Enter Project Management to start the machine learning process
+                </p>
                 <img class="img-fluid" src="img/demo/regression/1_project.png" alt="">
-                <blockquote><p><small>
-                    Project Management <br>
-                    1. 選擇Project Type, 四種Project Type有不同的任務<br>
-                    2. 輸入Project的名稱<br>
-                    3. 新增Project<br>
-                </small></p></blockquote>
-                <p>建立Regression專案</p>
+                <blockquote>
+                    <p>
+                        <small>
+                                Project Management <br>
+                            1. 選擇Project Type, 四種Project Type有不同的任務 (Select Project Type out of the four available tasks
+                            based on your requirement)<br>
+                            2. 輸入Project的名稱 (Enter Project Name)<br>
+                            3. 新增Project (Click Create Project)<br>
+                        </small>
+                    </p>
+                </blockquote>
+                <p>建立Regression專案  Create a Regression project</p>
                 <img class="img-fluid" src="img/demo/regression/1_KDD.png" alt="">
-                <p>新增project成功後，下方的My Projects即會出現剛剛所新建的專案，點選 [KDD] 以開始機器學習流程。</p>
+                               <p>
+                    成功新增Project後點選KDD, 開始機器學習的流程<br>
+                    Click KDD after successfully adding Project to start the machine learning process
+                </p>
 
                 <h4>
                     2.檔案上傳 Data Input
                 </h4>
-                <p>上傳csv資料檔案以進行KDD流程</p>
+                              <p>
+                    上傳csv資料檔案以進行KDD流程<br>
+                    Upload .csv data file for KDD process
+                </p>
                 <img class="img-fluid" src="img/demo/regression/2_KDD_upload.png" alt="">
-                <blockquote><p><small>
-                    KDD：Data Input<br>
-                    1. 點選可看到KDD各個流程的詳細說明<br>
-                    2. 提示欄，建議使用者下一個步驟可以做什麼<br>
-                    3. Model Management，這個Project訓練出來的所有模型可在這邊瀏覽，修改資訊或Export成API<br>
-                    4. 選擇資料上傳的階段<br>
-                    5. 從本機端選擇資料<br>
-                    6. 點選進行資料上傳<br>
-                </small></p></blockquote>
+                <blockquote>
+                    <p>
+                        <small>
+                            KDD：Data Input<br>
+                            1. 點選可看到KDD各個流程的詳細說明 (Click to see the detailed description of each process of KDD)<br>
+                            2. 提示欄，建議使用者下一個步驟可以做什麼 (Prompt bar, suggest the user can do the next step)<br>
+                            3. Model Management，這個Project訓練出來的所有模型可在這邊瀏覽，修改資訊或Export成API (Model Management, all models
+                            trained by this Project can be browsed here, modify
+                            Information or Export into API)<br>
+                            4. 選擇資料上傳的階段 (Select the stage for uploading data)<br>
+                            5. 從本機端選擇資料 (Select data from the local computer)<br>
+                            6. 點選進行資料上傳 (Click to upload data)<br>
+                            7. 顯示Server是否正常啟動 (Display whether the server starts normally)<br>
+                        </small>
+                    </p>
+                </blockquote>
                 <img class="img-fluid" src="img/demo/regression/2_upload-label.png" alt="">
-                <blockquote><p><small>
-                    KDD：Data Input - select label column<br>
-                    1. 選擇作為標記的資料（Regression可以作為標記的資料類型為：整數、浮點數），在這個範例，選取 "ANS" 作為標記<br>
-                    2. 儲存檔案<br>
-                </small></p></blockquote>
-                <p>上傳完成會看到該資料的操作欄位</p>
+                <blockquote>
+                    <p>
+                        <small>
+                            KDD：Data Input - select label column<br>
+                            1. 選擇作為標記的資料（Regression可以作為標記的資料類型為：整數、浮點數），在這個範例，選取 "ANS" 作為標記
+                            (Select the data to be labeled (Regression can be used as a marker data type: Integer,
+Float). In this example, select "ANS" as the marker)<br>
+                            2. 儲存檔案(Save the file)<br>
+                        </small>
+                    </p>
+                </blockquote>
+                                <p>
+                    上傳完成會看到該資料的操作欄位<br>
+                    Upload complete will see the operation of the data field
+                </p>
                 <img class="img-fluid" src="img/demo/regression/2_files.png" alt="">
-                <blockquote><p><small>
-                    Data Information<br>
-                    1. 顯示上傳資料的檔案名稱<br>
-                    2. 點選可看到該資料的操作紀錄說明<br>
-                    3. 顯示該資料所在的Server<br>
-                    4. 顯示資料欄位數量<br>
-                    5. 顯示該資料被設為標籤的欄位名稱，若該資料無標籤則顯示「No Label」<br>
-                    6. 點選按鈕可對該資料進行各項操作處理，綠色為系統建議的下一步操作<br>
-                    7. 點選預覽整份資料<br>
-                    8. 點選可下載資料<br>
-                    9. 點選會將該資料刪除<br>
-                </small></p></blockquote>
-                <p>我們點選7.Preview來預覽整份資料</p>
+                <blockquote>
+                    <p>
+                        <small>
+                            Data Information<br>
+                            1. 顯示上傳資料的檔案名稱 (Display the file name of the uploaded data)<br>
+                            2. 點選可看到該資料的操作紀錄說明 (Click to see the operation record done for the data)<br>
+                            3. 顯示該資料所在的Server (Display the server where the data is located)<br>
+                            4. 顯示資料欄位數量 (Display the data field number)<br>
+                            5. 顯示該資料被設為標籤的欄位名稱，若該資料無標籤則顯示「No Label」(Display the field where the data is set as the label
+                            Name, if there is no label in the
+                            data, "No Label" will be displayed)<br>
+                            6. 點選按鈕可對該資料進行各項操作處理，綠色為系統建議的下一步操作 (Click the button to perform various operations on the
+                            data. Green color suggests the
+                            next step that should be taken.)<br>
+                            7. 點選預覽整份資料 (Click to preview the entire data)<br>
+                            8. 點選可下載資料 (Click to download Data)<br>
+                            9. 點選會將該資料刪除 (Click to delete the data)<br>
+                        </small>
+                    </p>
+                </blockquote>
+                               <p>
+                    我們點選7.Preview來預覽整份資料 <br>
+                    We click on 7.Preview to preview the entire data
+                </p>
                 <img class="img-fluid" src="img/demo/regression/2_data-viewer.png" alt="">
-                <blockquote><p><small>
-                    Data Viewer<br>
-                    1. 正在預覽的資料檔案名稱，與檔案所在的Server<br>
-                    2. 顯示該資料的所有欄位名稱<br>
-                    3. 顯示該欄位的第一項資料<br>
-                    4. 顯示該欄位的資料型態<br>
-                    5. 顯示該欄位的資料平均值，若為非數值型態則會顯示「-」<br>
-                    6. 顯示該欄位的資料標準差，若為非數值型態則會顯示「-」<br>
-                    7. 點選可看到該欄位的所有資料分佈直方圖<br>
-                    8. 點選回到KDD流程<br>
-                </small></p></blockquote>
+                <blockquote>
+                    <p>
+                        <small>
+                                Data Viewer<br>
+                            1. 正在預覽的資料檔案名稱，與檔案所在的Server (The name of the data file being previewed, and the server where
+                            the file is located)<br>
+                            2. 顯示該資料的所有欄位名稱 (Show all field names of the data)<br>
+                            3. 顯示該欄位的第一項資料 (Display the first data of this field)<br>
+                            4. 顯示該欄位的資料型態 (Display the data type of this field)<br>
+                            5. 顯示該欄位的資料平均值，若為非數值型態則會顯示「-」(Display The average value of the data in this field, if it is
+                            a non-numeric type, it will
+                            show "-")<br>
+                            6. 顯示該欄位的資料標準差，若為非數值型態則會顯示「-」 (The standard deviation of data in this field will be
+                            displayed. If it is a non-numeric
+                            type, "-" will be displayed)<br>
+                            7. 點選可看到該欄位的所有資料分佈直方圖 (Click to see All data distribution histogram for this field)<br>
+                            8. 點選回到KDD流程 (Click to return to KDD process)<br>
+                        </small>
+                    </p>
+                </blockquote>
 
                 <h4>
                     3.資料前處理 Data Pre-process
                 </h4>
-                <p>這個步驟可對資料進行缺值過濾、常態分佈離群值過濾、正規化等預處理</p>
-                <p>從Function欄位中, 選擇 [Data Pre-processing] 按鈕, 開始進行資料預處理(Pre-process)</p>
+                <p>
+                    這個步驟可對資料進行缺值過濾、常態分佈離群值過濾、正規化等預處理<br>
+                    從Function欄位中, 選擇Data Pre-processing按鈕, 開始進行資料預處理(Pre-process)
+                </p>
+                                <p>
+                    This step can be used to preprocess the data such as missing value filtering, normal distribution
+                    outlier filtering, and normalization.<br>
+                    From the Function field, select the Data Pre-processing button and start data preprocessing
+                </p>
                 <img class="img-fluid" src="img/demo/regression/3_preprocess-1.png" alt="">
-                <blockquote><p><small>
-                    Step 1<br>
-                    1. 正在處理的資料檔案名稱，與檔案所在的Server<br>
-                    2. 選擇欄位<br>
-                    3. 取消回到KDD流程頁面/預覽該欄位的資料分佈直方圖<br>
-                </small></p></blockquote>
+                <blockquote>
+                    <p>
+                        <small>
+                            Step 1<br>
+                            1. 正在處理的資料檔案名稱，與檔案所在的Server (The name of the data file being processed, and the server where
+                            the file is located)<br>
+                            2. 選擇欄位 (Select the field)<br>
+                            3. 預覽該欄位的資料分佈直方圖 (Preview the data distribution histogram for this field)<br>
+                            4. 取消回到KDD流程頁面 (Cancel back to the KDD process page)<br>
+                        </small>
+                    </p>
+                </blockquote>
                 <img class="img-fluid" src="img/demo/regression/3_preprocess-2.png" alt="">
-                <blockquote><p><small>
-                    Step 2<br>
-                    1. 對資料進行缺值過濾，如果該列資料有NAN則會刪除該列資料，這個步驟能夠確保訓練時不會因為資料不齊全而出現錯誤<br>
-                    2. 對該欄位資料進行利用常態分佈離群值過濾，1 std表示將過慮掉1個標準差以外的離群資料，0 std表示不對資料做離群值過濾<br>
-                    3. 取消處理動作回到Step 1選擇欄位<br>
-                    4. 執行上述處理並預覽該欄位處理過後的資料分佈直方圖<br>
-                </small></p></blockquote>
+                <blockquote>
+                    <p>
+                        <small>
+                            Step 2<br>
+                            1. 對資料進行缺值過濾，如果該列資料有NAN則會刪除該列資料，這個步驟能夠確保訓練時不會因為資料不齊全而出現錯誤(Impose the value filter for the
+                            data. If there is a NaN in the column, the data will be
+                            deleted. This step can ensure that the training will not be wrong because the data is not
+                            complete.)<br>
+                            2. 對該欄位資料進行利用常態分佈離群值過濾，1 std表示將過慮掉1個標準差以外的離群資料，0 std表示不對資料做離群值過濾(Use the normal distribution
+                            of the data in the field. Outlier filtering, 1 std indicates
+                            that outlier data other than one standard deviation will be taken into account, 0
+                            stdindicates that outlier filtering is not performed on the data.)<br>
+                            3. 執行上述處理並預覽該欄位處理過後的資料分佈直方圖(Perform the above processing and preview Data distribution
+                            histogram after this
+                            field is processed.)<br>
+                            4. 取消處理動作回到Step 1選擇欄位(The processing operation is canceled and Step 1 is selected.)<br>
+
+                        </small>
+                    </p>
+                </blockquote>
                 <img class="img-fluid" src="img/demo/regression/3_preprocess-3.png" alt="">
-                <blockquote><p><small>
-                    Step 3<br>
-                    1. 選擇Normalize的演算法<br>
-                    2. 選擇欲進行Normalize的資料欄位，進行Normalize能夠將資料Scale到相同的range<br>
-                </small></p></blockquote>
+                <blockquote>
+                    <p>
+                        <small>
+                               Step 3<br>
+                            1. 選擇Normalize的演算法(Select Normalize's algorithm)<br>
+                            2. 選擇欲進行Normalize的資料欄位，進行Normalize能夠將資料Scale到相同的range(Select the data field you want to
+                            Normalize. Normalize can scale the data to the same
+                            range)<br>
+                        </small>
+                    </p>
+                </blockquote>
                 <img class="img-fluid" src="img/demo/regression/3_preprocess-4.png" alt="">
-                <blockquote><p><small>
-                    Step 4<br>
-                    1. 輸入處理過資料的新檔案名稱<br>
-                    2. 取消處理動作，不儲存處理過的新資料，並回到KDD流程頁面<br>
-                    3. 儲存處理過的新資料，並回到KDD流程頁面
-                </small></p></blockquote>
+                <blockquote>
+                    <p>
+                        <small>
+                            Step 4<br>
+                                    1. 輸入處理過資料的新檔案名稱(Enter the new file name of the processed data.)<br>
+                            2. 儲存處理過的新資料，並回到KDD流程頁面(Save the processed new data, and Go back to the KDD process
+                            page)<br>
+                            3. 取消處理動作，不儲存處理過的新資料，並回到KDD流程頁面(Cancel the processing action, do not save the processed new
+                            data, and return to the
+                            KDD process page)
+                        </small>
+                    </p>
+                </blockquote>
 
                 <p>這個範例將資料進行缺值過濾、常態分佈離群值過濾處理（
                     <a href="file/pm2.5_preprocess.csv">下載</a> 檔案觀察資料變化，151.2 kB）。<br>
                     完成前處理後的資料會顯示在Feature Selection Stage欄位之中<br>
                     按下 [Feature-Selection] 進入特徵選擇頁面
+                </p>
+                <p>
+                    This paradigm normalizes the data and then filters the Prevalence_times value-deficient filter and
+                    the normal distribution outlier filter. (<a href="file/pm2.5_preprocess.csv">Download </a>file
+                    observations change, 151.2 kB).
+                    After the processed file is successfully saved, it will return to the KDD page for the next feature
+                    selection.
                 </p>
                 <img class="img-fluid" src="img/demo/regression/4_KDD_feature.png" alt="">
 
@@ -219,57 +327,81 @@ atmospheric data (O3, PM10, PM2.5, wind speed).
                     4.特徵選擇 Feature Selection
                 </h4>
                 <p>這個步驟是利用Pearson Correlation演算法計算各個Feature間的關係程度,以作為選擇Feature的參考，按下 [Apply Algorithm]</p>
+                <p>
+                    This step is to use the Pearson Correlation algorithm to calculate the degree of relationship between
+each Feature, as a reference for selecting Feature, press [Apply Algorithm]
+                </p>>
                 <img class="img-fluid" src="img/demo/regression/4_apply.png" alt="">
                 <img class="img-fluid" src="img/demo/regression/4_feature_matrix.png" alt="">
-                <blockquote><p><small>
-                    Feature Selection<br>
-                    1. 勾選要保留的feature<br>
-                    2. Feature名稱<br>
-                    3. 此Feature的Mean值<br>
-                    4.Feature標準差<br>
-                    5.各個Feature間的關係係數及該欄平均關係係數，顏色越紅correlation越高<br>
-                </small></p></blockquote>
-                <p>在這個範例我們選擇全部的feature。選擇完要使用的feature後，輸入新的檔名，並儲存或放棄此步驟。</p>
+                <blockquote>
+                    <p>
+                        <small>
+                            Feature Selection<br>
+                            1. 勾選要保留的feature(Check the feature to be retained)<br>
+                            2. Feature名稱(Feature Name)<br>
+                            3. 此Feature的Mean值(Mean value of this Feature)<br>
+                            4.Feature標準差(Feature Standard Deviation)<br>
+                            5.各個Feature間的關係係數及該欄平均關係係數，顏色越紅correlation越高(Relationship coefficient between each Feature and the average relationship
+coefficient of the column - the redder the color, the higher the correlation)<br>
+                        </small>
+                    </p>
+                </blockquote>
+                <p>在這個範例我們選擇全部的feature。選擇完要使用的feature後，輸入新的檔名，並儲存或放棄此步驟。<br>
+In this example we select all the features. After selecting the feature you want to use, enter a new
+file name and save or discard this step.
+                </p>
+
                 <img class="img-fluid" src="img/demo/regression/4_feature_save.png" alt="">
 
                 <h4>
                     5.模型訓練 Model Training
                 </h4>
-                <p>
+               <p>
                     這個步驟能夠選擇演算法對資料進行模型訓練，並預覽訓練出來的模型<br>
-                    從功能欄點選Model Training，開始進行模型訓練
+                    This step can select algorithms to model the data and preview the trained models
                 </p>
                 <img class="img-fluid" src="img/demo/regression/5_model-training.png" alt="">
-                <blockquote><p><small>
-                    Model Training<br>
-                    1. 選擇模型訓練的演算法<br>
-                    2. 設定演算法參數，或直接使用預設值<br>
-                    2-1. Fit Intercept: 是否加上Ｙ軸截距<br>
-                    2-2. Normolize: 若 Fit Intercept = False，此欄位無效。若此欄為true，X會先以mean及I2-norm 做normolize<br>
-                    2-3. Copy X: 是否備份X。若False則覆寫<br>
-                    2-4. N Jobs: 要創的計算工作數量<br>
-                    3. 輸入模型名稱<br>
-                    4. 進行模型訓練<br>
-                    5. 回到KDD流程<br>
-                </small></p></blockquote>
+                <blockquote>
+                    <p>
+                        <small>
+                          Model Training<br>
+                            1. 選擇模型訓練的演算法(Select the model training algorithm)<br>
+                            2. 設定演算法參數，或直接使用預設值(Set the algorithm parameters, or use the default value directly)<br>
+                            3. 輸入模型名稱(Enter the model name)<br>
+                            4. 進行模型訓練(Perform the model training)<br>
+                            5. 回到KDD流程(Back to KDD process)<br>
+                        </small>
+                    </p>
+                </blockquote>
                 <img class="img-fluid" src="img/demo/regression/model_preview.png" alt="">
-                <blockquote><p><small>
-                    Model Preview<br>
-                    1. 選擇兩個資料欄位<br>
-                    2. 顯示訓練好的模型圖<br>
-                </small></p></blockquote>
-                <p>兩個檔案都分別進行模型訓練訓，練出來的兩個模型可以在Model Management頁面看到</p>
+                <blockquote>
+                    <p>
+                        <small>
+                            Model Preview<br>
+                            1. 選擇兩個資料欄位(Select two data fields)<br>
+                            2. 顯示訓練好的模型圖(Display trained model diagram)<br>
+                        </small>
+                    </p>
+                </blockquote>
+                                <p>
+                    訓練出來的模型可以在Model Management頁面管理<br>
+                    Trained models can be managed on the Model Management page
+                </p>
                 <img class="img-fluid" src="img/demo/regression/5_model_management.png" alt="">
                 <img class="img-fluid" src="img/demo/regression/5_model.png" alt="">
-                <blockquote><p><small>
-                    Model Management<br>
-                    1. 模型名稱<br>
-                    2. 模型訓練使用的演算法<br>
-                    3. 訓練使用的檔案及參數<br>
-                    4. 將模型匯出成API<br>
-                    5. 修改模型資料<br>
-                    6. 刪除模型<br>
-                </small></p></blockquote>
+                <blockquote>
+                    <p>
+                        <small>
+                            Model Management<br>
+                            1. 模型名稱(Model name)<br>
+                            2. 模型訓練使用的演算法(Algorithm used for model training)<br>
+                            3. 訓練使用的檔案及參數(Files and parameters used for training)<br>
+                            4. 將模型匯出成API(Export model to API)<br>
+                            5. 修改模型資料(Modify model data)<br>
+                            6. 刪除模型(Delete model)<br>
+                        </small>
+                    </p>
+                </blockquote>
 
                 <h4>
                     6.模型預測 Model Prediction
@@ -299,52 +431,68 @@ atmospheric data (O3, PM10, PM2.5, wind speed).
                 <h4>
                     7.建立API Export API
                 </h4>
-                               <p>
+                <p>
                     這個步驟能夠將訓練好的模型建立成API，以利更多的應用<br>
                     This step can build a trained model into an API for more applications
                 </p>
                 <img class="img-fluid" src="img/demo/regression/7_export.png" alt="">
                 <span class="caption text-muted">選擇Export API的功能</span>
                 <img class="img-fluid" src="img/demo/regression/7_set_api.png" alt="">
-                <blockquote><p><small>
+                <blockquote>
+                    <p>
+                        <small>
                             Set API Input<br>
                             1. 輸入API的名稱，以及API功能描述(Name of the input API, and description of the API function)<br>
                             2. 輸入自訂的API Input Key(Input custom API Input Key)<br>
                             3. 輸入API Input描述(Input API Input Description)<br>
-                </small></p></blockquote>
+                        </small>
+                    </p>
+                </blockquote>
                 <img class="img-fluid" src="img/demo/regression/7_set_api_out.png" alt="">
-                <blockquote><p>                        <small>
+                <blockquote>
+                    <p>
+                        <small>
                             Set API Output<br>
                             1. 輸入自訂的API Output Key(Enter the custom API Output Key)<br>
                             2. 輸入API Output描述(Enter the API Output description)<br>
                             3. 儲存並建立API(Save and create the API)<br>
                             4. 不儲存回到Model Management(Do not save back to Model Management)<br>
-                        </small></p></blockquote>
-                                <p>
+                        </small>
+                    </p>
+                </blockquote>
+                <p>
                     建立API後，會顯示API呼叫URL以及API輸入輸出的json格式<br>
                     After the API is created, the API call URL and API input/output json format are displayed
                 </p>
                 <img class="img-fluid" src="img/demo/regression/7_show_api.png" alt="">
-                <blockquote><p><small>
+                <blockquote>
+                    <p>
+                        <small>
                             Show API Format<br>
                             1. API的名稱(API Name)<br>
                             2. API的呼叫路徑(API Call Path)<br>
                             3. API Input格式(API Input Format)<br>
                             4. API Output格式(API Output Format)<br>
-                </small></p></blockquote>
-                               <p>
+                        </small>
+                    </p>
+                </blockquote>
+                <p>
                     點選上方功能列的API ，可以檢視全部建立好的API<br>
                     Click on the API above to view all established APIs
                 </p>
                 <img class="img-fluid" src="img/demo/regression/7_api_management.png" alt="">
-                <blockquote><p><small>
+                <blockquote>
+                    <p>
+                        <small>
                             API Management<br>
                             1. 輸入API的名稱(Enter the name of the API)<br>
                             2. API功能描述(API function description)<br>
                             3. API建立資訊(API creation information)<br>
                             4. 編輯API(Edit API)<br>
                             5. 刪除API(Delete API)<br>
-                </small></p></blockquote>
+                        </small>
+                    </p>
+                </blockquote>
             </div>
         </div>
         <div class="row">
