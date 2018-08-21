@@ -9,10 +9,12 @@ layout: default
             <div class="col-lg-8 col-md-10 mx-auto">
                 <div class="post-heading">
                     <h1>Welcome to InAnalysis!</h1>
-                    <h2 class="subheading">學習如何上傳檔案，訓練模組，建立API，快速上手InAnalysis系統。</h2>
+                    <h2 class="subheading">學習如何上傳檔案，訓練模組，建立API，快速上手InAnalysis系統。<br>
+                    Learn how to upload files, train modules, build APIs, and get started quickly with the InAnalysis system.
+                    </h2>
                     <span class="meta">Posted by
                 <a href="#">InAnalysis</a>
-                on August 23, 2017</span>
+                on August 20, 2018</span>
                 </div>
             </div>
         </div>
@@ -33,6 +35,13 @@ layout: default
                 上方功能列表點選<a href="#PM">Project Management</a> 能夠察看所有專案相關資訊, 新增專案, 修改專案,
                 刪除專案。點選<a href="#AM">API Management</a> 能夠察看使用者建立的API,修改API, 刪除API。
             </p>
+            <p>
+                After logging in, the personal Dash Board displayed the number of projects and APIs created by the user.
+                Click on the function list above:<br>
+                <a href="#PM">Project Management</a> is able to view all project related information,
+                create projects, modify projects, delete the project.<br>
+                <a href="#AM">API Management</a> is able to view user-created APIs, modify APIs, and remove APIs.
+            </p>>
             <img class="img-fluid" src="img/demo/intro/index_pic.png" alt="">
             <span class="caption text-muted">InAnalysis User Dash Board</span>
 
@@ -43,6 +52,8 @@ layout: default
             <p>
                 察看所有專案相關資訊, 新增專案, 修改專案, 刪除專案。專案類型依資料以及目的來選擇。
                 可點選以下連結觀看各類型專案詳細的範例步驟說明<br>
+                View all project related information, add projects, modify projects, and delete projects. The type of project is selected based on the data and purpose.
+                 Click on the links below to see detailed sample steps for each type of project.<br>
                 Demo: <a href="abnormal_detection.html">AbnormalDetection </a>,
                 <a href="regression.html">Regression </a>,
                 <a href="classification.html">Classification </a>,
@@ -53,19 +64,27 @@ layout: default
             <img class="img-fluid" src="img/demo/demo_task_choose.png" alt="">
             <span class="caption text-muted">InAnalysis Choosing Project Type</span>
             <p>
-                新增專案完成後點選KDD，進入專案KDD流程
+                新增專案完成後點選KDD，進入專案KDD流程<br>
+                After the new project is completed, click KDD to enter the project KDD process.
             </p>
             <img class="img-fluid" src="img/demo/demo_KDD.png" alt="">
             <span class="caption text-muted">Create a Project and Start KDD Process</span>
 
             <h2 class="section-heading">
-                專案KDD流程
+                專案KDD流程 Project KDD Process
             </h2>
             <hr>
             <p>
                 KDD（Knowledge Discovery in Database）是從資料中辨別有效的、新穎的、潛在有用的、最終可理解的模式的過程；
                 而資料探勘是KDD通過特定的演算法在可接受的計算效率限制內生成特定模式的一個步驟。<br>
                 本系統的KDD流程分為四大部份：Data Pre-process, Feature Selection, Model Training, Model Prediction
+            </p>
+            <p>
+                KDD (Knowledge Discovery in Database) is the process of identifying valid, novel, potentially useful,
+                and ultimately understandable patterns from data; and data mining is the process by which KDD generates
+                specific limits within acceptable computational efficiency limits. A step in the pattern.<br>
+                The KDD process of this system is divided into four parts: Data Pre-process, Feature Selection,
+                Model Training, Model Prediction
             </p>
             <h4>
                 0.Data Input
@@ -76,17 +95,30 @@ layout: default
             <h4>
                 1.Data Pre-process
             </h4>
-            <p>從Function欄位中, 選擇Data Pre-processing按鈕, 進行資料預處理(Pre-process)</p>
+            <p>
+                從Function欄位中, 選擇Data Pre-processing按鈕, 進行資料預處理(Pre-process)<br>
+                From the Function field, select the Data Pre-processing button for data preprocessing
+            </p>
             <img class="img-fluid" src="img/demo/clustering/preprocess_01.png" alt="">
-            <p>選擇資料要進行哪些處理並預覽</p>
+            <p>
+                選擇資料要進行哪些處理並預覽<br>
+                Select what to do with the data and preview it
+            </p>
             <img class="img-fluid" src="img/demo/clustering/preprocess_02.png" alt="">
-            <p>儲存處理過的資料</p>
+            <p>
+                儲存處理過的資料<br>
+                Saved processed data
+            </p>
             <img class="img-fluid" src="img/demo/clustering/preprocess_03.png" alt="">
             <span class="caption text-muted">Data Pre-process</span>
             <h4>
                 2.Feature Selection
             </h4>
-            <p>利用Pearson Correlation演算法計算各個Feature間的關係程度,以作為選擇Feature的參考</p>
+            <p>
+                利用Pearson Correlation演算法計算各個Feature間的關係程度,以作為選擇Feature的參考<br>
+                Use the Pearson Correlation algorithm to calculate the degree of relationship between each feature
+                as a reference for selecting features.
+            </p>
             <img class="img-fluid" src="img/demo/clustering/feature_01.png" alt="">
             <span class="caption text-muted">Feature Selection</span>
             <img class="img-fluid" src="img/demo/clustering/feature_02.png" alt="">
@@ -96,7 +128,9 @@ layout: default
             <h4>
                 3.Model Training
             </h4>
-            <p>利用上傳的資料進行模型訓練</p>
+            <p>利用上傳的資料進行模型訓練<br>
+            Model training using uploaded data
+            </p>
             <img class="img-fluid" src="img/demo/clustering/train_01.png" alt="">
             <span class="caption text-muted">Model Training</span>
             <img class="img-fluid" src="img/demo/clustering/train_02.png" alt="">
@@ -108,49 +142,57 @@ layout: default
             </h2>
             <hr>
             <p class="post-meta">
-                使用者製作出來的API總管，點選API Management能夠察看使用者建立的API,修改API, 刪除API。
+                使用者製作出來的API總管，點選API Management能夠察看使用者建立的API,修改API, 刪除API。<br>
+                The API manager created by the user can click on API Management to view the API established by the user,
+                modify the API, and delete the API.
             </p>
             <img class="img-fluid" src="img/demo/clustering/09_0exportAPI.png" alt="">
                 <span class="caption text-muted">選擇Export API的功能</span>
                 <img class="img-fluid" src="img/demo/clustering/09_1setAPI.png" alt="">
                 <blockquote><p><small>
-                    Set API Input<br>
-                    1. 輸入API的名稱，以及API功能描述<br>
-                    2. 輸入自訂的API Input Key<br>
-                    3. 輸入API Input描述<br>
+                            Set API Input<br>
+                            1. 輸入API的名稱，以及API功能描述(Name of the input API, and description of the API function)<br>
+                            2. 輸入自訂的API Input Key(Input custom API Input Key)<br>
+                            3. 輸入API Input描述(Input API Input Description)<br>
                 </small></p></blockquote>
                 <img class="img-fluid" src="img/demo/clustering/09_1setAPI-1.png" alt="">
-                <blockquote><p><small>
-                    Set API Output<br>
-                    1. 輸入自訂的API Output Key<br>
-                    2. 輸入API Output描述<br>
-                    3. 儲存並建立API<br>
-                    4. 不儲存回到Model Management<br>
-                </small></p></blockquote>
-                <p>建立API後，會顯示API呼叫URL以及API輸入輸出的json格式</p>
+                <blockquote><p>                        <small>
+                            Set API Output<br>
+                            1. 輸入自訂的API Output Key(Enter the custom API Output Key)<br>
+                            2. 輸入API Output描述(Enter the API Output description)<br>
+                            3. 儲存並建立API(Save and create the API)<br>
+                            4. 不儲存回到Model Management(Do not save back to Model Management)<br>
+                        </small></p></blockquote>
+                                <p>
+                    建立API後，會顯示API呼叫URL以及API輸入輸出的json格式<br>
+                    After the API is created, the API call URL and API input/output json format are displayed
+                </p>
                 <img class="img-fluid" src="img/demo/clustering/09_2showAPI.png" alt="">
                 <blockquote><p><small>
-                    Show API Format<br>
-                    1. API的名稱<br>
-                    2. API的呼叫路徑<br>
-                    3. API Input格式<br>
-                    4. API Output格式<br>
+                            Show API Format<br>
+                            1. API的名稱(API Name)<br>
+                            2. API的呼叫路徑(API Call Path)<br>
+                            3. API Input格式(API Input Format)<br>
+                            4. API Output格式(API Output Format)<br>
                 </small></p></blockquote>
-                <p>點選上方功能列的API ，可以檢視全部建立好的API</p>
+                               <p>
+                    點選上方功能列的API ，可以檢視全部建立好的API<br>
+                    Click on the API above to view all established APIs
+                </p>
                 <img class="img-fluid" src="img/demo/clustering/09_3API_manegement.png" alt="">
                 <blockquote><p><small>
-                    Model Training<br>
-                    1. 輸入API的名稱<br>
-                    2. API功能描述<br>
-                    3. API建立資訊<br>
-                    4. 編輯API<br>
-                    5. 刪除API<br>
+                             API Management<br>
+                            1. 輸入API的名稱(Enter the name of the API)<br>
+                            2. API功能描述(API function description)<br>
+                            3. API建立資訊(API creation information)<br>
+                            4. 編輯API(Edit API)<br>
+                            5. 刪除API(Delete API)<br>
                 </small></p></blockquote>
 
             <hr>
             <button type="button" class="btn btn-primary btn-lg btn-block"
                     onclick="window.open('http://ntuesoe.com:8008/login','_blank')">
-                立即試用！
+                立即試用！Try It!
             </button>
         </div>
     </div>
